@@ -1,0 +1,58 @@
+C:\Users\Alejandro Alfaro\source\repos\ProyectoInicio2021\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\Alejandro Alfaro\source\repos\ProyectoInicio2021\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\Alejandro Alfaro\source\repos\ProyectoInicio2021\CapaDatos\bin\Debug\CapaObjetos.dll
+C:\Users\Alejandro Alfaro\source\repos\ProyectoInicio2021\CapaDatos\bin\Debug\Npgsql.dll
+C:\Users\Alejandro Alfaro\source\repos\ProyectoInicio2021\CapaDatos\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Alejandro Alfaro\source\repos\ProyectoInicio2021\CapaDatos\bin\Debug\CapaObjetos.pdb
+C:\Users\Alejandro Alfaro\source\repos\ProyectoInicio2021\CapaDatos\bin\Debug\Npgsql.pdb
+C:\Users\Alejandro Alfaro\source\repos\ProyectoInicio2021\CapaDatos\bin\Debug\Npgsql.xml
+C:\Users\Alejandro Alfaro\source\repos\ProyectoInicio2021\CapaDatos\obj\Debug\CapaDatos.csprojAssemblyReference.cache
+C:\Users\Alejandro Alfaro\source\repos\ProyectoInicio2021\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCompileInputs.cache
+C:\Users\Alejandro Alfaro\source\repos\ProyectoInicio2021\CapaDatos\obj\Debug\CapaDatos.csproj.CopyComplete
+C:\Users\Alejandro Alfaro\source\repos\ProyectoInicio2021\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\Alejandro Alfaro\source\repos\ProyectoInicio2021\CapaDatos\obj\Debug\CapaDatos.pdb
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML2021\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCompileInputs.cache
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML2021\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML2021\CapaDatos\obj\Debug\CapaDatos.pdb
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML2021\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML2021\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML2021\CapaDatos\bin\Debug\CapaObjetos.dll
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML2021\CapaDatos\bin\Debug\CapaObjetos.pdb
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML2021\CapaDatos\obj\Debug\CapaDatos.csproj.CopyComplete
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML2021\CapaDatos\obj\Debug\CapaDatos.csprojAssemblyReference.cache
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML20213C\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML20213C\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML20213C\CapaDatos\bin\Debug\CapaObjetos.dll
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML20213C\CapaDatos\bin\Debug\CapaObjetos.pdb
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML20213C\CapaDatos\obj\Debug\CapaDatos.csprojAssemblyReference.cache
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML20213C\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCompileInputs.cache
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML20213C\CapaDatos\obj\Debug\CapaDatos.csproj.CopyComplete
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML20213C\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML20213C\CapaDatos\obj\Debug\CapaDatos.pdb
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML2025\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML2025\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML2025\CapaDatos\bin\Debug\CapaObjetos.dll
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML2025\CapaDatos\bin\Debug\CapaObjetos.pdb
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML2025\CapaDatos\obj\Debug\CapaDatos.csproj.AssemblyReference.cache
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML2025\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCompileInputs.cache
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML2025\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML2025\CapaDatos\obj\Debug\CapaDatos.pdb
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML2025\CapaDatos\obj\Debug\CapaDatos.csproj.Up2Date
+C:\Users\gonza\Downloads\ProyectoXML2025 - Terminado\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\gonza\Downloads\ProyectoXML2025 - Terminado\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\gonza\Downloads\ProyectoXML2025 - Terminado\CapaDatos\bin\Debug\CapaObjetos.dll
+C:\Users\gonza\Downloads\ProyectoXML2025 - Terminado\CapaDatos\bin\Debug\CapaObjetos.pdb
+C:\Users\gonza\Downloads\ProyectoXML2025 - Terminado\CapaDatos\obj\Debug\CapaDatos.csproj.AssemblyReference.cache
+C:\Users\gonza\Downloads\ProyectoXML2025 - Terminado\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCompileInputs.cache
+C:\Users\gonza\Downloads\ProyectoXML2025 - Terminado\CapaDatos\obj\Debug\CapaDatos.csproj.Up2Date
+C:\Users\gonza\Downloads\ProyectoXML2025 - Terminado\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\gonza\Downloads\ProyectoXML2025 - Terminado\CapaDatos\obj\Debug\CapaDatos.pdb
+C:\Users\Estudiante\Downloads\CompraProductos\CompraProductos\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\Estudiante\Downloads\CompraProductos\CompraProductos\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\Estudiante\Downloads\CompraProductos\CompraProductos\CapaDatos\bin\Debug\CapaObjetos.dll
+C:\Users\Estudiante\Downloads\CompraProductos\CompraProductos\CapaDatos\bin\Debug\CapaObjetos.pdb
+C:\Users\Estudiante\Downloads\CompraProductos\CompraProductos\CapaDatos\obj\Debug\CapaDatos.csproj.AssemblyReference.cache
+C:\Users\Estudiante\Downloads\CompraProductos\CompraProductos\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCompileInputs.cache
+C:\Users\Estudiante\Downloads\CompraProductos\CompraProductos\CapaDatos\obj\Debug\CapaDatos.csproj.Up2Date
+C:\Users\Estudiante\Downloads\CompraProductos\CompraProductos\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\Estudiante\Downloads\CompraProductos\CompraProductos\CapaDatos\obj\Debug\CapaDatos.pdb

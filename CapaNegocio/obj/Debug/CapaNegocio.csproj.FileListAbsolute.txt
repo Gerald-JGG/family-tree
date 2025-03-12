@@ -1,0 +1,70 @@
+C:\Users\Alejandro Alfaro\source\repos\ProyectoInicio2021\CapaNegocio\bin\Debug\CapaNegocio.dll
+C:\Users\Alejandro Alfaro\source\repos\ProyectoInicio2021\CapaNegocio\bin\Debug\CapaNegocio.pdb
+C:\Users\Alejandro Alfaro\source\repos\ProyectoInicio2021\CapaNegocio\bin\Debug\CapaDatos.dll
+C:\Users\Alejandro Alfaro\source\repos\ProyectoInicio2021\CapaNegocio\bin\Debug\CapaObjetos.dll
+C:\Users\Alejandro Alfaro\source\repos\ProyectoInicio2021\CapaNegocio\bin\Debug\Npgsql.dll
+C:\Users\Alejandro Alfaro\source\repos\ProyectoInicio2021\CapaNegocio\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Alejandro Alfaro\source\repos\ProyectoInicio2021\CapaNegocio\bin\Debug\CapaDatos.pdb
+C:\Users\Alejandro Alfaro\source\repos\ProyectoInicio2021\CapaNegocio\bin\Debug\CapaObjetos.pdb
+C:\Users\Alejandro Alfaro\source\repos\ProyectoInicio2021\CapaNegocio\bin\Debug\Npgsql.pdb
+C:\Users\Alejandro Alfaro\source\repos\ProyectoInicio2021\CapaNegocio\bin\Debug\Npgsql.xml
+C:\Users\Alejandro Alfaro\source\repos\ProyectoInicio2021\CapaNegocio\obj\Debug\CapaNegocio.csprojAssemblyReference.cache
+C:\Users\Alejandro Alfaro\source\repos\ProyectoInicio2021\CapaNegocio\obj\Debug\CapaNegocio.csproj.CoreCompileInputs.cache
+C:\Users\Alejandro Alfaro\source\repos\ProyectoInicio2021\CapaNegocio\obj\Debug\CapaNegocio.csproj.CopyComplete
+C:\Users\Alejandro Alfaro\source\repos\ProyectoInicio2021\CapaNegocio\obj\Debug\CapaNegocio.dll
+C:\Users\Alejandro Alfaro\source\repos\ProyectoInicio2021\CapaNegocio\obj\Debug\CapaNegocio.pdb
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML2021\CapaNegocio\obj\Debug\CapaNegocio.csprojAssemblyReference.cache
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML2021\CapaNegocio\obj\Debug\CapaNegocio.csproj.CoreCompileInputs.cache
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML2021\CapaNegocio\obj\Debug\CapaNegocio.dll
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML2021\CapaNegocio\obj\Debug\CapaNegocio.pdb
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML2021\CapaNegocio\bin\Debug\CapaNegocio.dll
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML2021\CapaNegocio\bin\Debug\CapaNegocio.pdb
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML2021\CapaNegocio\bin\Debug\CapaDatos.dll
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML2021\CapaNegocio\bin\Debug\CapaObjetos.dll
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML2021\CapaNegocio\bin\Debug\CapaDatos.pdb
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML2021\CapaNegocio\bin\Debug\CapaObjetos.pdb
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML2021\CapaNegocio\obj\Debug\CapaNegocio.csproj.CopyComplete
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML20213C\CapaNegocio\bin\Debug\CapaNegocio.dll
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML20213C\CapaNegocio\bin\Debug\CapaNegocio.pdb
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML20213C\CapaNegocio\bin\Debug\CapaDatos.dll
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML20213C\CapaNegocio\bin\Debug\CapaObjetos.dll
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML20213C\CapaNegocio\bin\Debug\CapaDatos.pdb
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML20213C\CapaNegocio\bin\Debug\CapaObjetos.pdb
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML20213C\CapaNegocio\obj\Debug\CapaNegocio.csprojAssemblyReference.cache
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML20213C\CapaNegocio\obj\Debug\CapaNegocio.csproj.CoreCompileInputs.cache
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML20213C\CapaNegocio\obj\Debug\CapaNegocio.csproj.CopyComplete
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML20213C\CapaNegocio\obj\Debug\CapaNegocio.dll
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML20213C\CapaNegocio\obj\Debug\CapaNegocio.pdb
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML2025\CapaNegocio\bin\Debug\CapaNegocio.dll
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML2025\CapaNegocio\bin\Debug\CapaNegocio.pdb
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML2025\CapaNegocio\bin\Debug\CapaDatos.dll
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML2025\CapaNegocio\bin\Debug\CapaObjetos.dll
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML2025\CapaNegocio\bin\Debug\CapaDatos.pdb
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML2025\CapaNegocio\bin\Debug\CapaObjetos.pdb
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML2025\CapaNegocio\obj\Debug\CapaNegocio.csproj.AssemblyReference.cache
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML2025\CapaNegocio\obj\Debug\CapaNegocio.csproj.CoreCompileInputs.cache
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML2025\CapaNegocio\obj\Debug\CapaNegocio.dll
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML2025\CapaNegocio\obj\Debug\CapaNegocio.pdb
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML2025\CapaNegocio\obj\Debug\CapaNego.81B9D119.Up2Date
+C:\Users\gonza\Downloads\ProyectoXML2025 - Terminado\CapaNegocio\bin\Debug\CapaNegocio.dll
+C:\Users\gonza\Downloads\ProyectoXML2025 - Terminado\CapaNegocio\bin\Debug\CapaNegocio.pdb
+C:\Users\gonza\Downloads\ProyectoXML2025 - Terminado\CapaNegocio\bin\Debug\CapaDatos.dll
+C:\Users\gonza\Downloads\ProyectoXML2025 - Terminado\CapaNegocio\bin\Debug\CapaObjetos.dll
+C:\Users\gonza\Downloads\ProyectoXML2025 - Terminado\CapaNegocio\bin\Debug\CapaDatos.pdb
+C:\Users\gonza\Downloads\ProyectoXML2025 - Terminado\CapaNegocio\bin\Debug\CapaObjetos.pdb
+C:\Users\gonza\Downloads\ProyectoXML2025 - Terminado\CapaNegocio\obj\Debug\CapaNegocio.csproj.AssemblyReference.cache
+C:\Users\gonza\Downloads\ProyectoXML2025 - Terminado\CapaNegocio\obj\Debug\CapaNegocio.csproj.CoreCompileInputs.cache
+C:\Users\gonza\Downloads\ProyectoXML2025 - Terminado\CapaNegocio\obj\Debug\CapaNego.81B9D119.Up2Date
+C:\Users\gonza\Downloads\ProyectoXML2025 - Terminado\CapaNegocio\obj\Debug\CapaNegocio.dll
+C:\Users\gonza\Downloads\ProyectoXML2025 - Terminado\CapaNegocio\obj\Debug\CapaNegocio.pdb
+C:\Users\Estudiante\Downloads\CompraProductos\CompraProductos\CapaNegocio\bin\Debug\CapaNegocio.dll
+C:\Users\Estudiante\Downloads\CompraProductos\CompraProductos\CapaNegocio\bin\Debug\CapaNegocio.pdb
+C:\Users\Estudiante\Downloads\CompraProductos\CompraProductos\CapaNegocio\bin\Debug\CapaDatos.dll
+C:\Users\Estudiante\Downloads\CompraProductos\CompraProductos\CapaNegocio\bin\Debug\CapaObjetos.dll
+C:\Users\Estudiante\Downloads\CompraProductos\CompraProductos\CapaNegocio\bin\Debug\CapaDatos.pdb
+C:\Users\Estudiante\Downloads\CompraProductos\CompraProductos\CapaNegocio\bin\Debug\CapaObjetos.pdb
+C:\Users\Estudiante\Downloads\CompraProductos\CompraProductos\CapaNegocio\obj\Debug\CapaNegocio.csproj.AssemblyReference.cache
+C:\Users\Estudiante\Downloads\CompraProductos\CompraProductos\CapaNegocio\obj\Debug\CapaNegocio.csproj.CoreCompileInputs.cache
+C:\Users\Estudiante\Downloads\CompraProductos\CompraProductos\CapaNegocio\obj\Debug\CapaNego.81B9D119.Up2Date
+C:\Users\Estudiante\Downloads\CompraProductos\CompraProductos\CapaNegocio\obj\Debug\CapaNegocio.dll
+C:\Users\Estudiante\Downloads\CompraProductos\CompraProductos\CapaNegocio\obj\Debug\CapaNegocio.pdb

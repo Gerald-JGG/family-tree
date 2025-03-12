@@ -1,0 +1,34 @@
+C:\Users\Alejandro Alfaro\source\repos\ProyectoInicio2021\CapaObjetos\bin\Debug\CapaObjetos.dll
+C:\Users\Alejandro Alfaro\source\repos\ProyectoInicio2021\CapaObjetos\bin\Debug\CapaObjetos.pdb
+C:\Users\Alejandro Alfaro\source\repos\ProyectoInicio2021\CapaObjetos\obj\Debug\CapaObjetos.csproj.CoreCompileInputs.cache
+C:\Users\Alejandro Alfaro\source\repos\ProyectoInicio2021\CapaObjetos\obj\Debug\CapaObjetos.dll
+C:\Users\Alejandro Alfaro\source\repos\ProyectoInicio2021\CapaObjetos\obj\Debug\CapaObjetos.pdb
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML2021\CapaObjetos\bin\Debug\CapaObjetos.dll
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML2021\CapaObjetos\bin\Debug\CapaObjetos.pdb
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML2021\CapaObjetos\obj\Debug\CapaObjetos.csprojAssemblyReference.cache
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML2021\CapaObjetos\obj\Debug\CapaObjetos.csproj.CoreCompileInputs.cache
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML2021\CapaObjetos\obj\Debug\CapaObjetos.dll
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML2021\CapaObjetos\obj\Debug\CapaObjetos.pdb
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML20213C\CapaObjetos\bin\Debug\CapaObjetos.dll
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML20213C\CapaObjetos\bin\Debug\CapaObjetos.pdb
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML20213C\CapaObjetos\obj\Debug\CapaObjetos.csproj.CoreCompileInputs.cache
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML20213C\CapaObjetos\obj\Debug\CapaObjetos.dll
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML20213C\CapaObjetos\obj\Debug\CapaObjetos.pdb
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML2025\CapaObjetos\bin\Debug\CapaObjetos.dll
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML2025\CapaObjetos\bin\Debug\CapaObjetos.pdb
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML2025\CapaObjetos\obj\Debug\CapaObjetos.csproj.AssemblyReference.cache
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML2025\CapaObjetos\obj\Debug\CapaObjetos.csproj.CoreCompileInputs.cache
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML2025\CapaObjetos\obj\Debug\CapaObjetos.dll
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML2025\CapaObjetos\obj\Debug\CapaObjetos.pdb
+C:\Users\gonza\Downloads\ProyectoXML2025 - Terminado\CapaObjetos\bin\Debug\CapaObjetos.dll
+C:\Users\gonza\Downloads\ProyectoXML2025 - Terminado\CapaObjetos\bin\Debug\CapaObjetos.pdb
+C:\Users\gonza\Downloads\ProyectoXML2025 - Terminado\CapaObjetos\obj\Debug\CapaObjetos.csproj.AssemblyReference.cache
+C:\Users\gonza\Downloads\ProyectoXML2025 - Terminado\CapaObjetos\obj\Debug\CapaObjetos.csproj.CoreCompileInputs.cache
+C:\Users\gonza\Downloads\ProyectoXML2025 - Terminado\CapaObjetos\obj\Debug\CapaObjetos.dll
+C:\Users\gonza\Downloads\ProyectoXML2025 - Terminado\CapaObjetos\obj\Debug\CapaObjetos.pdb
+C:\Users\Estudiante\Downloads\CompraProductos\CompraProductos\CapaObjetos\bin\Debug\CapaObjetos.dll
+C:\Users\Estudiante\Downloads\CompraProductos\CompraProductos\CapaObjetos\bin\Debug\CapaObjetos.pdb
+C:\Users\Estudiante\Downloads\CompraProductos\CompraProductos\CapaObjetos\obj\Debug\CapaObjetos.csproj.AssemblyReference.cache
+C:\Users\Estudiante\Downloads\CompraProductos\CompraProductos\CapaObjetos\obj\Debug\CapaObjetos.csproj.CoreCompileInputs.cache
+C:\Users\Estudiante\Downloads\CompraProductos\CompraProductos\CapaObjetos\obj\Debug\CapaObjetos.dll
+C:\Users\Estudiante\Downloads\CompraProductos\CompraProductos\CapaObjetos\obj\Debug\CapaObjetos.pdb

@@ -1,0 +1,165 @@
+C:\Users\Alejandro Alfaro\source\repos\ProyectoInicio2021\CapaPresentacion\bin\Debug\CapaPresentacion.exe.config
+C:\Users\Alejandro Alfaro\source\repos\ProyectoInicio2021\CapaPresentacion\bin\Debug\CapaPresentacion.exe
+C:\Users\Alejandro Alfaro\source\repos\ProyectoInicio2021\CapaPresentacion\bin\Debug\CapaPresentacion.pdb
+C:\Users\Alejandro Alfaro\source\repos\ProyectoInicio2021\CapaPresentacion\obj\Debug\CapaPresentacion.csprojAssemblyReference.cache
+C:\Users\Alejandro Alfaro\source\repos\ProyectoInicio2021\CapaPresentacion\obj\Debug\CapaPresentacion.FrmEstudiantes.resources
+C:\Users\Alejandro Alfaro\source\repos\ProyectoInicio2021\CapaPresentacion\obj\Debug\CapaPresentacion.Properties.Resources.resources
+C:\Users\Alejandro Alfaro\source\repos\ProyectoInicio2021\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.GenerateResource.cache
+C:\Users\Alejandro Alfaro\source\repos\ProyectoInicio2021\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.CoreCompileInputs.cache
+C:\Users\Alejandro Alfaro\source\repos\ProyectoInicio2021\CapaPresentacion\obj\Debug\CapaPresentacion.exe
+C:\Users\Alejandro Alfaro\source\repos\ProyectoInicio2021\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
+C:\Users\Alejandro Alfaro\source\repos\ProyectoInicio2021\CapaPresentacion\bin\Debug\CapaNegocio.dll
+C:\Users\Alejandro Alfaro\source\repos\ProyectoInicio2021\CapaPresentacion\bin\Debug\CapaObjetos.dll
+C:\Users\Alejandro Alfaro\source\repos\ProyectoInicio2021\CapaPresentacion\bin\Debug\CapaDatos.dll
+C:\Users\Alejandro Alfaro\source\repos\ProyectoInicio2021\CapaPresentacion\bin\Debug\Npgsql.dll
+C:\Users\Alejandro Alfaro\source\repos\ProyectoInicio2021\CapaPresentacion\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Alejandro Alfaro\source\repos\ProyectoInicio2021\CapaPresentacion\bin\Debug\CapaNegocio.pdb
+C:\Users\Alejandro Alfaro\source\repos\ProyectoInicio2021\CapaPresentacion\bin\Debug\CapaObjetos.pdb
+C:\Users\Alejandro Alfaro\source\repos\ProyectoInicio2021\CapaPresentacion\bin\Debug\CapaDatos.pdb
+C:\Users\Alejandro Alfaro\source\repos\ProyectoInicio2021\CapaPresentacion\bin\Debug\Npgsql.pdb
+C:\Users\Alejandro Alfaro\source\repos\ProyectoInicio2021\CapaPresentacion\bin\Debug\Npgsql.xml
+C:\Users\Alejandro Alfaro\source\repos\ProyectoInicio2021\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.CopyComplete
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML2021\CapaPresentacion\obj\Debug\CapaPresentacion.csprojAssemblyReference.cache
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML2021\CapaPresentacion\obj\Debug\CapaPresentacion.FrmEstudiantes.resources
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML2021\CapaPresentacion\obj\Debug\CapaPresentacion.Properties.Resources.resources
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML2021\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.GenerateResource.cache
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML2021\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.CoreCompileInputs.cache
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML2021\CapaPresentacion\obj\Debug\CapaPresentacion.exe
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML2021\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML2021\CapaPresentacion\bin\Debug\CapaPresentacion.exe.config
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML2021\CapaPresentacion\bin\Debug\CapaPresentacion.exe
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML2021\CapaPresentacion\bin\Debug\CapaPresentacion.pdb
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML2021\CapaPresentacion\bin\Debug\CapaNegocio.dll
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML2021\CapaPresentacion\bin\Debug\CapaObjetos.dll
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML2021\CapaPresentacion\bin\Debug\CapaNegocio.pdb
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML2021\CapaPresentacion\bin\Debug\CapaObjetos.pdb
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML2021\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.CopyComplete
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML2021\CapaPresentacion\bin\Debug\CapaDatos.dll
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML2021\CapaPresentacion\bin\Debug\CapaDatos.pdb
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML20213C\CapaPresentacion\obj\Debug\CapaPresentacion.csprojAssemblyReference.cache
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML20213C\CapaPresentacion\obj\Debug\CapaPresentacion.FrmEstudiantes.resources
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML20213C\CapaPresentacion\obj\Debug\CapaPresentacion.Properties.Resources.resources
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML20213C\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.GenerateResource.cache
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML20213C\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.CoreCompileInputs.cache
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML20213C\CapaPresentacion\obj\Debug\CapaPresentacion.exe
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML20213C\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML20213C\CapaPresentacion\bin\Debug\CapaPresentacion.exe.config
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML20213C\CapaPresentacion\bin\Debug\CapaPresentacion.exe
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML20213C\CapaPresentacion\bin\Debug\CapaPresentacion.pdb
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML20213C\CapaPresentacion\bin\Debug\CapaNegocio.dll
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML20213C\CapaPresentacion\bin\Debug\CapaObjetos.dll
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML20213C\CapaPresentacion\bin\Debug\CapaNegocio.pdb
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML20213C\CapaPresentacion\bin\Debug\CapaObjetos.pdb
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML20213C\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.CopyComplete
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML20213C\CapaPresentacion\bin\Debug\CapaDatos.dll
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML20213C\CapaPresentacion\bin\Debug\CapaDatos.pdb
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML2025\CapaPresentacion\bin\Debug\CapaPresentacion.exe.config
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML2025\CapaPresentacion\bin\Debug\CapaPresentacion.exe
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML2025\CapaPresentacion\bin\Debug\CapaPresentacion.pdb
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML2025\CapaPresentacion\bin\Debug\CapaNegocio.dll
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML2025\CapaPresentacion\bin\Debug\CapaObjetos.dll
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML2025\CapaPresentacion\bin\Debug\CapaDatos.dll
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML2025\CapaPresentacion\bin\Debug\CapaNegocio.pdb
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML2025\CapaPresentacion\bin\Debug\CapaObjetos.pdb
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML2025\CapaPresentacion\bin\Debug\CapaDatos.pdb
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML2025\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.AssemblyReference.cache
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML2025\CapaPresentacion\obj\Debug\CapaPresentacion.FrmEstudiantes.resources
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML2025\CapaPresentacion\obj\Debug\CapaPresentacion.Properties.Resources.resources
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML2025\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.GenerateResource.cache
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML2025\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.CoreCompileInputs.cache
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML2025\CapaPresentacion\obj\Debug\CapaPresentacion.exe
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML2025\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
+C:\Users\Alejandro Alfaro\source\repos\ProyectoXML2025\CapaPresentacion\obj\Debug\CapaPres.61CA7C38.Up2Date
+C:\Users\gonza\Downloads\ProyectoXML2025 - Terminado\CapaPresentacion\bin\Debug\CapaPresentacion.exe.config
+C:\Users\gonza\Downloads\ProyectoXML2025 - Terminado\CapaPresentacion\bin\Debug\CapaPresentacion.exe
+C:\Users\gonza\Downloads\ProyectoXML2025 - Terminado\CapaPresentacion\bin\Debug\CapaPresentacion.pdb
+C:\Users\gonza\Downloads\ProyectoXML2025 - Terminado\CapaPresentacion\bin\Debug\CapaNegocio.dll
+C:\Users\gonza\Downloads\ProyectoXML2025 - Terminado\CapaPresentacion\bin\Debug\CapaObjetos.dll
+C:\Users\gonza\Downloads\ProyectoXML2025 - Terminado\CapaPresentacion\bin\Debug\CapaDatos.dll
+C:\Users\gonza\Downloads\ProyectoXML2025 - Terminado\CapaPresentacion\bin\Debug\CapaNegocio.pdb
+C:\Users\gonza\Downloads\ProyectoXML2025 - Terminado\CapaPresentacion\bin\Debug\CapaObjetos.pdb
+C:\Users\gonza\Downloads\ProyectoXML2025 - Terminado\CapaPresentacion\bin\Debug\CapaDatos.pdb
+C:\Users\gonza\Downloads\ProyectoXML2025 - Terminado\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.AssemblyReference.cache
+C:\Users\gonza\Downloads\ProyectoXML2025 - Terminado\CapaPresentacion\obj\Debug\CapaPresentacion.FrmAdmin.resources
+C:\Users\gonza\Downloads\ProyectoXML2025 - Terminado\CapaPresentacion\obj\Debug\CapaPresentacion.FrmAdminCategoria.resources
+C:\Users\gonza\Downloads\ProyectoXML2025 - Terminado\CapaPresentacion\obj\Debug\CapaPresentacion.FrmAdminProducto.resources
+C:\Users\gonza\Downloads\ProyectoXML2025 - Terminado\CapaPresentacion\obj\Debug\CapaPresentacion.FrmRegister.resources
+C:\Users\gonza\Downloads\ProyectoXML2025 - Terminado\CapaPresentacion\obj\Debug\CapaPresentacion.FrmLogin.resources
+C:\Users\gonza\Downloads\ProyectoXML2025 - Terminado\CapaPresentacion\obj\Debug\CapaPresentacion.FrmUser.resources
+C:\Users\gonza\Downloads\ProyectoXML2025 - Terminado\CapaPresentacion\obj\Debug\CapaPresentacion.FrmUserMiCarrito.resources
+C:\Users\gonza\Downloads\ProyectoXML2025 - Terminado\CapaPresentacion\obj\Debug\CapaPresentacion.FrmUserProducto.resources
+C:\Users\gonza\Downloads\ProyectoXML2025 - Terminado\CapaPresentacion\obj\Debug\CapaPresentacion.FrmUserProductoDetalle.resources
+C:\Users\gonza\Downloads\ProyectoXML2025 - Terminado\CapaPresentacion\obj\Debug\CapaPresentacion.Properties.Resources.resources
+C:\Users\gonza\Downloads\ProyectoXML2025 - Terminado\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.GenerateResource.cache
+C:\Users\gonza\Downloads\ProyectoXML2025 - Terminado\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.CoreCompileInputs.cache
+C:\Users\gonza\Downloads\ProyectoXML2025 - Terminado\CapaPresentacion\obj\Debug\CapaPres.61CA7C38.Up2Date
+C:\Users\gonza\Downloads\ProyectoXML2025 - Terminado\CapaPresentacion\obj\Debug\CapaPresentacion.exe
+C:\Users\gonza\Downloads\ProyectoXML2025 - Terminado\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
+C:\Users\gonza\Downloads\ProyectoXML2025 - Terminado\CapaPresentacion\obj\Debug\CapaPresentacion.FrmAdminUsuario.resources
+C:\Users\gonza\Downloads\ProyectoXML2025 - Terminado\CapaPresentacion\obj\Debug\CapaPresentacion.FrmAdminVenta.resources
+C:\Users\gonza\Downloads\ProyectoXML2025 - Terminado\CapaPresentacion\obj\Debug\CapaPresentacion.FrmAdminVentaDetalle.resources
+C:\Users\gonza\Downloads\ProyectoXML2025 - Terminado\CapaPresentacion\obj\Debug\CapaPresentacion.FrmUserReporte1.resources
+C:\Users\gonza\Downloads\ProyectoXML2025 - Terminado\CapaPresentacion\obj\Debug\CapaPresentacion.FrmUserReporte2.resources
+C:\Users\gonza\Downloads\ProyectoXML2025 - Terminado\CapaPresentacion\obj\Debug\CapaPresentacion.FrmUserReporte3.resources
+C:\Users\gonza\Downloads\CompraProductos\CapaPresentacion\bin\Debug\CapaPresentacion.exe.config
+C:\Users\gonza\Downloads\CompraProductos\CapaPresentacion\bin\Debug\CapaPresentacion.exe
+C:\Users\gonza\Downloads\CompraProductos\CapaPresentacion\bin\Debug\CapaPresentacion.pdb
+C:\Users\gonza\Downloads\CompraProductos\CapaPresentacion\bin\Debug\CapaNegocio.dll
+C:\Users\gonza\Downloads\CompraProductos\CapaPresentacion\bin\Debug\CapaObjetos.dll
+C:\Users\gonza\Downloads\CompraProductos\CapaPresentacion\bin\Debug\CapaDatos.dll
+C:\Users\gonza\Downloads\CompraProductos\CapaPresentacion\bin\Debug\CapaNegocio.pdb
+C:\Users\gonza\Downloads\CompraProductos\CapaPresentacion\bin\Debug\CapaObjetos.pdb
+C:\Users\gonza\Downloads\CompraProductos\CapaPresentacion\bin\Debug\CapaDatos.pdb
+C:\Users\gonza\Downloads\CompraProductos\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.AssemblyReference.cache
+C:\Users\gonza\Downloads\CompraProductos\CapaPresentacion\obj\Debug\CapaPresentacion.FrmAdmin.resources
+C:\Users\gonza\Downloads\CompraProductos\CapaPresentacion\obj\Debug\CapaPresentacion.FrmAdminCategoria.resources
+C:\Users\gonza\Downloads\CompraProductos\CapaPresentacion\obj\Debug\CapaPresentacion.FrmAdminProducto.resources
+C:\Users\gonza\Downloads\CompraProductos\CapaPresentacion\obj\Debug\CapaPresentacion.FrmAdminUsuario.resources
+C:\Users\gonza\Downloads\CompraProductos\CapaPresentacion\obj\Debug\CapaPresentacion.FrmAdminVenta.resources
+C:\Users\gonza\Downloads\CompraProductos\CapaPresentacion\obj\Debug\CapaPresentacion.FrmAdminVentaDetalle.resources
+C:\Users\gonza\Downloads\CompraProductos\CapaPresentacion\obj\Debug\CapaPresentacion.FrmRegister.resources
+C:\Users\gonza\Downloads\CompraProductos\CapaPresentacion\obj\Debug\CapaPresentacion.FrmLogin.resources
+C:\Users\gonza\Downloads\CompraProductos\CapaPresentacion\obj\Debug\CapaPresentacion.FrmUser.resources
+C:\Users\gonza\Downloads\CompraProductos\CapaPresentacion\obj\Debug\CapaPresentacion.FrmUserMiCarrito.resources
+C:\Users\gonza\Downloads\CompraProductos\CapaPresentacion\obj\Debug\CapaPresentacion.FrmUserProducto.resources
+C:\Users\gonza\Downloads\CompraProductos\CapaPresentacion\obj\Debug\CapaPresentacion.FrmUserProductoDetalle.resources
+C:\Users\gonza\Downloads\CompraProductos\CapaPresentacion\obj\Debug\CapaPresentacion.FrmUserReporte1.resources
+C:\Users\gonza\Downloads\CompraProductos\CapaPresentacion\obj\Debug\CapaPresentacion.FrmUserReporte2.resources
+C:\Users\gonza\Downloads\CompraProductos\CapaPresentacion\obj\Debug\CapaPresentacion.FrmUserReporte3.resources
+C:\Users\gonza\Downloads\CompraProductos\CapaPresentacion\obj\Debug\CapaPresentacion.Properties.Resources.resources
+C:\Users\gonza\Downloads\CompraProductos\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.GenerateResource.cache
+C:\Users\gonza\Downloads\CompraProductos\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.CoreCompileInputs.cache
+C:\Users\gonza\Downloads\CompraProductos\CapaPresentacion\obj\Debug\CapaPres.61CA7C38.Up2Date
+C:\Users\gonza\Downloads\CompraProductos\CapaPresentacion\obj\Debug\CapaPresentacion.exe
+C:\Users\gonza\Downloads\CompraProductos\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
+C:\Users\Estudiante\Downloads\CompraProductos\CompraProductos\CapaPresentacion\bin\Debug\CapaPresentacion.exe.config
+C:\Users\Estudiante\Downloads\CompraProductos\CompraProductos\CapaPresentacion\bin\Debug\CapaPresentacion.exe
+C:\Users\Estudiante\Downloads\CompraProductos\CompraProductos\CapaPresentacion\bin\Debug\CapaPresentacion.pdb
+C:\Users\Estudiante\Downloads\CompraProductos\CompraProductos\CapaPresentacion\bin\Debug\CapaNegocio.dll
+C:\Users\Estudiante\Downloads\CompraProductos\CompraProductos\CapaPresentacion\bin\Debug\CapaObjetos.dll
+C:\Users\Estudiante\Downloads\CompraProductos\CompraProductos\CapaPresentacion\bin\Debug\CapaDatos.dll
+C:\Users\Estudiante\Downloads\CompraProductos\CompraProductos\CapaPresentacion\bin\Debug\CapaNegocio.pdb
+C:\Users\Estudiante\Downloads\CompraProductos\CompraProductos\CapaPresentacion\bin\Debug\CapaObjetos.pdb
+C:\Users\Estudiante\Downloads\CompraProductos\CompraProductos\CapaPresentacion\bin\Debug\CapaDatos.pdb
+C:\Users\Estudiante\Downloads\CompraProductos\CompraProductos\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.AssemblyReference.cache
+C:\Users\Estudiante\Downloads\CompraProductos\CompraProductos\CapaPresentacion\obj\Debug\CapaPresentacion.FrmAdmin.resources
+C:\Users\Estudiante\Downloads\CompraProductos\CompraProductos\CapaPresentacion\obj\Debug\CapaPresentacion.FrmAdminCategoria.resources
+C:\Users\Estudiante\Downloads\CompraProductos\CompraProductos\CapaPresentacion\obj\Debug\CapaPresentacion.FrmAdminProducto.resources
+C:\Users\Estudiante\Downloads\CompraProductos\CompraProductos\CapaPresentacion\obj\Debug\CapaPresentacion.FrmAdminUsuario.resources
+C:\Users\Estudiante\Downloads\CompraProductos\CompraProductos\CapaPresentacion\obj\Debug\CapaPresentacion.FrmAdminVenta.resources
+C:\Users\Estudiante\Downloads\CompraProductos\CompraProductos\CapaPresentacion\obj\Debug\CapaPresentacion.FrmAdminVentaDetalle.resources
+C:\Users\Estudiante\Downloads\CompraProductos\CompraProductos\CapaPresentacion\obj\Debug\CapaPresentacion.FrmRegister.resources
+C:\Users\Estudiante\Downloads\CompraProductos\CompraProductos\CapaPresentacion\obj\Debug\CapaPresentacion.FrmLogin.resources
+C:\Users\Estudiante\Downloads\CompraProductos\CompraProductos\CapaPresentacion\obj\Debug\CapaPresentacion.FrmUser.resources
+C:\Users\Estudiante\Downloads\CompraProductos\CompraProductos\CapaPresentacion\obj\Debug\CapaPresentacion.FrmUserMiCarrito.resources
+C:\Users\Estudiante\Downloads\CompraProductos\CompraProductos\CapaPresentacion\obj\Debug\CapaPresentacion.FrmUserProducto.resources
+C:\Users\Estudiante\Downloads\CompraProductos\CompraProductos\CapaPresentacion\obj\Debug\CapaPresentacion.FrmUserProductoDetalle.resources
+C:\Users\Estudiante\Downloads\CompraProductos\CompraProductos\CapaPresentacion\obj\Debug\CapaPresentacion.FrmUserReporte1.resources
+C:\Users\Estudiante\Downloads\CompraProductos\CompraProductos\CapaPresentacion\obj\Debug\CapaPresentacion.FrmUserReporte2.resources
+C:\Users\Estudiante\Downloads\CompraProductos\CompraProductos\CapaPresentacion\obj\Debug\CapaPresentacion.FrmUserReporte3.resources
+C:\Users\Estudiante\Downloads\CompraProductos\CompraProductos\CapaPresentacion\obj\Debug\CapaPresentacion.Properties.Resources.resources
+C:\Users\Estudiante\Downloads\CompraProductos\CompraProductos\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.GenerateResource.cache
+C:\Users\Estudiante\Downloads\CompraProductos\CompraProductos\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.CoreCompileInputs.cache
+C:\Users\Estudiante\Downloads\CompraProductos\CompraProductos\CapaPresentacion\obj\Debug\CapaPres.61CA7C38.Up2Date
+C:\Users\Estudiante\Downloads\CompraProductos\CompraProductos\CapaPresentacion\obj\Debug\CapaPresentacion.exe
+C:\Users\Estudiante\Downloads\CompraProductos\CompraProductos\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
