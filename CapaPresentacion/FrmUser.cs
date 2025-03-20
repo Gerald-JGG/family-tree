@@ -17,19 +17,16 @@ namespace CapaPresentacion
             InitializeComponent();
             MostrarControl(uc1);
         }
-        private FrmUserProducto uc1 = new FrmUserProducto();
-        private FrmUserMiCarrito uc2 = new FrmUserMiCarrito();
+        private FrmUserArbolFamiliar uc1 = new FrmUserArbolFamiliar();
 
         private void btnCerrar_Click(object sender, EventArgs e)
         {
-            var resultado = MessageBox.Show("¿Está seguro que quiere cerrar sesión?", "Cerrar sesión", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            Application.Exit();
+        }
 
-            if (resultado == DialogResult.Yes)
-            {
-                this.Close();
-                FrmLogin frmLogin = new FrmLogin();
-                frmLogin.Show();
-            }
+        private void btnArbolFamiliar_Click(object sender, EventArgs e)
+        {
+            MostrarControl(uc1);
         }
 
         private void MostrarControl(UserControl control)
@@ -37,16 +34,6 @@ namespace CapaPresentacion
             panel2.Controls.Clear();
             panel2.Controls.Add(control);
             control.BringToFront();
-        }
-
-        private void btnProductos_Click(object sender, EventArgs e)
-        {
-            MostrarControl(uc1);
-        }
-
-        private void btnMiCarrito_Click(object sender, EventArgs e)
-        {
-            MostrarControl(uc2);
         }
     }
 }

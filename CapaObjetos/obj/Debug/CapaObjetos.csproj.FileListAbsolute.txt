@@ -32,3 +32,9 @@ C:\Users\Estudiante\Downloads\CompraProductos\CompraProductos\CapaObjetos\obj\De
 C:\Users\Estudiante\Downloads\CompraProductos\CompraProductos\CapaObjetos\obj\Debug\CapaObjetos.csproj.CoreCompileInputs.cache
 C:\Users\Estudiante\Downloads\CompraProductos\CompraProductos\CapaObjetos\obj\Debug\CapaObjetos.dll
 C:\Users\Estudiante\Downloads\CompraProductos\CompraProductos\CapaObjetos\obj\Debug\CapaObjetos.pdb
+C:\Users\gonza\Downloads\ArbolGenealogico\CapaObjetos\bin\Debug\CapaObjetos.dll
+C:\Users\gonza\Downloads\ArbolGenealogico\CapaObjetos\bin\Debug\CapaObjetos.pdb
+C:\Users\gonza\Downloads\ArbolGenealogico\CapaObjetos\obj\Debug\CapaObjetos.csproj.AssemblyReference.cache
+C:\Users\gonza\Downloads\ArbolGenealogico\CapaObjetos\obj\Debug\CapaObjetos.csproj.CoreCompileInputs.cache
+C:\Users\gonza\Downloads\ArbolGenealogico\CapaObjetos\obj\Debug\CapaObjetos.dll
+C:\Users\gonza\Downloads\ArbolGenealogico\CapaObjetos\obj\Debug\CapaObjetos.pdb

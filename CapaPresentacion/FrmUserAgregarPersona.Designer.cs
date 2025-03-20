@@ -31,19 +31,23 @@
             this.btnCerrar = new System.Windows.Forms.Button();
             this.lblProducto = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.dtpFecha = new System.Windows.Forms.DateTimePicker();
+            this.cmbGenero = new System.Windows.Forms.ComboBox();
+            this.cmbRelacionFamiliar = new System.Windows.Forms.ComboBox();
+            this.cmbResidencia = new System.Windows.Forms.ComboBox();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.txtCedula = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtHijos = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.cmbCategoria = new System.Windows.Forms.ComboBox();
+            this.txtFallecido = new System.Windows.Forms.TextBox();
+            this.cmbEstadoCivil = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -52,16 +56,13 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.txtNombre = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.pictureFoto = new System.Windows.Forms.PictureBox();
+            this.cmbConyuge = new System.Windows.Forms.ComboBox();
+            this.chkCasado = new System.Windows.Forms.CheckBox();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureFoto)).BeginInit();
             this.SuspendLayout();
             // 
             // btnCerrar
@@ -94,26 +95,26 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            this.panel2.Controls.Add(this.dateTimePicker1);
-            this.panel2.Controls.Add(this.comboBox4);
-            this.panel2.Controls.Add(this.comboBox3);
-            this.panel2.Controls.Add(this.comboBox2);
+            this.panel2.Controls.Add(this.chkCasado);
+            this.panel2.Controls.Add(this.cmbConyuge);
+            this.panel2.Controls.Add(this.pictureFoto);
+            this.panel2.Controls.Add(this.dtpFecha);
+            this.panel2.Controls.Add(this.cmbGenero);
+            this.panel2.Controls.Add(this.cmbRelacionFamiliar);
+            this.panel2.Controls.Add(this.cmbResidencia);
             this.panel2.Controls.Add(this.button4);
             this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.button1);
-            this.panel2.Controls.Add(this.textBox7);
+            this.panel2.Controls.Add(this.txtCedula);
             this.panel2.Controls.Add(this.label13);
-            this.panel2.Controls.Add(this.textBox6);
+            this.panel2.Controls.Add(this.txtHijos);
             this.panel2.Controls.Add(this.label12);
-            this.panel2.Controls.Add(this.textBox5);
             this.panel2.Controls.Add(this.label11);
-            this.panel2.Controls.Add(this.textBox4);
             this.panel2.Controls.Add(this.label10);
             this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.textBox2);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.textBox1);
-            this.panel2.Controls.Add(this.cmbCategoria);
+            this.panel2.Controls.Add(this.txtFallecido);
+            this.panel2.Controls.Add(this.cmbEstadoCivil);
             this.panel2.Controls.Add(this.label9);
             this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.label7);
@@ -127,13 +128,94 @@
             this.panel2.Size = new System.Drawing.Size(531, 231);
             this.panel2.TabIndex = 6;
             // 
-            // textBox7
+            // dtpFecha
             // 
-            this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(17, 33);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(119, 26);
-            this.textBox7.TabIndex = 47;
+            this.dtpFecha.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpFecha.Location = new System.Drawing.Point(17, 78);
+            this.dtpFecha.Name = "dtpFecha";
+            this.dtpFecha.Size = new System.Drawing.Size(119, 26);
+            this.dtpFecha.TabIndex = 57;
+            // 
+            // cmbGenero
+            // 
+            this.cmbGenero.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbGenero.FormattingEnabled = true;
+            this.cmbGenero.Location = new System.Drawing.Point(263, 33);
+            this.cmbGenero.Name = "cmbGenero";
+            this.cmbGenero.Size = new System.Drawing.Size(119, 26);
+            this.cmbGenero.TabIndex = 56;
+            // 
+            // cmbRelacionFamiliar
+            // 
+            this.cmbRelacionFamiliar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbRelacionFamiliar.FormattingEnabled = true;
+            this.cmbRelacionFamiliar.Location = new System.Drawing.Point(386, 79);
+            this.cmbRelacionFamiliar.Name = "cmbRelacionFamiliar";
+            this.cmbRelacionFamiliar.Size = new System.Drawing.Size(119, 26);
+            this.cmbRelacionFamiliar.TabIndex = 55;
+            // 
+            // cmbResidencia
+            // 
+            this.cmbResidencia.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbResidencia.FormattingEnabled = true;
+            this.cmbResidencia.Location = new System.Drawing.Point(387, 33);
+            this.cmbResidencia.Name = "cmbResidencia";
+            this.cmbResidencia.Size = new System.Drawing.Size(119, 26);
+            this.cmbResidencia.TabIndex = 54;
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.MediumSpringGreen;
+            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.White;
+            this.button4.Location = new System.Drawing.Point(392, 181);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(119, 30);
+            this.button4.TabIndex = 53;
+            this.button4.Text = "Limpiar";
+            this.button4.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.MediumSpringGreen;
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(142, 181);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(119, 30);
+            this.button2.TabIndex = 49;
+            this.button2.Text = "Modificar";
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.MediumSpringGreen;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(267, 181);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(119, 30);
+            this.button1.TabIndex = 48;
+            this.button1.Text = "Eliminar";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // txtCedula
+            // 
+            this.txtCedula.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCedula.Location = new System.Drawing.Point(17, 33);
+            this.txtCedula.Name = "txtCedula";
+            this.txtCedula.Size = new System.Drawing.Size(119, 26);
+            this.txtCedula.TabIndex = 47;
             // 
             // label13
             // 
@@ -146,13 +228,13 @@
             this.label13.TabIndex = 46;
             this.label13.Text = "Hijos:";
             // 
-            // textBox6
+            // txtHijos
             // 
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(263, 78);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(119, 26);
-            this.textBox6.TabIndex = 45;
+            this.txtHijos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtHijos.Location = new System.Drawing.Point(263, 78);
+            this.txtHijos.Name = "txtHijos";
+            this.txtHijos.Size = new System.Drawing.Size(119, 26);
+            this.txtHijos.TabIndex = 45;
             // 
             // label12
             // 
@@ -165,14 +247,6 @@
             this.label12.TabIndex = 44;
             this.label12.Text = "Conyuge:";
             // 
-            // textBox5
-            // 
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(140, 126);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(119, 26);
-            this.textBox5.TabIndex = 43;
-            // 
             // label11
             // 
             this.label11.AutoSize = true;
@@ -183,14 +257,6 @@
             this.label11.Size = new System.Drawing.Size(34, 15);
             this.label11.TabIndex = 42;
             this.label11.Text = "Foto:";
-            // 
-            // textBox4
-            // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(17, 126);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(119, 26);
-            this.textBox4.TabIndex = 41;
             // 
             // label10
             // 
@@ -214,14 +280,6 @@
             this.label4.TabIndex = 38;
             this.label4.Text = "Casado:";
             // 
-            // textBox2
-            // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(263, 126);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(119, 26);
-            this.textBox2.TabIndex = 37;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -233,22 +291,22 @@
             this.label2.TabIndex = 36;
             this.label2.Text = "Fallecido:";
             // 
-            // textBox1
+            // txtFallecido
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(140, 78);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(119, 26);
-            this.textBox1.TabIndex = 35;
+            this.txtFallecido.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFallecido.Location = new System.Drawing.Point(140, 78);
+            this.txtFallecido.Name = "txtFallecido";
+            this.txtFallecido.Size = new System.Drawing.Size(119, 26);
+            this.txtFallecido.TabIndex = 35;
             // 
-            // cmbCategoria
+            // cmbEstadoCivil
             // 
-            this.cmbCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbCategoria.FormattingEnabled = true;
-            this.cmbCategoria.Location = new System.Drawing.Point(387, 126);
-            this.cmbCategoria.Name = "cmbCategoria";
-            this.cmbCategoria.Size = new System.Drawing.Size(119, 26);
-            this.cmbCategoria.TabIndex = 25;
+            this.cmbEstadoCivil.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbEstadoCivil.FormattingEnabled = true;
+            this.cmbEstadoCivil.Location = new System.Drawing.Point(387, 126);
+            this.cmbEstadoCivil.Name = "cmbEstadoCivil";
+            this.cmbEstadoCivil.Size = new System.Drawing.Size(119, 26);
+            this.cmbEstadoCivil.TabIndex = 25;
             // 
             // label9
             // 
@@ -340,36 +398,6 @@
             this.txtNombre.Size = new System.Drawing.Size(119, 26);
             this.txtNombre.TabIndex = 8;
             // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.MediumSpringGreen;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(267, 181);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(119, 30);
-            this.button1.TabIndex = 48;
-            this.button1.Text = "Eliminar";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.MediumSpringGreen;
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(142, 181);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(119, 30);
-            this.button2.TabIndex = 49;
-            this.button2.Text = "Modificar";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
@@ -385,21 +413,6 @@
             this.button3.Text = "↻";
             this.button3.UseVisualStyleBackColor = false;
             // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.MediumSpringGreen;
-            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(392, 181);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(119, 30);
-            this.button4.TabIndex = 53;
-            this.button4.Text = "Limpiar";
-            this.button4.UseVisualStyleBackColor = false;
-            // 
             // comboBox1
             // 
             this.comboBox1.BackColor = System.Drawing.Color.MediumSpringGreen;
@@ -411,41 +424,34 @@
             this.comboBox1.Size = new System.Drawing.Size(166, 32);
             this.comboBox1.TabIndex = 54;
             // 
-            // comboBox2
+            // pictureFoto
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(387, 33);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(119, 26);
-            this.comboBox2.TabIndex = 54;
+            this.pictureFoto.Location = new System.Drawing.Point(17, 126);
+            this.pictureFoto.Name = "pictureFoto";
+            this.pictureFoto.Size = new System.Drawing.Size(118, 26);
+            this.pictureFoto.TabIndex = 58;
+            this.pictureFoto.TabStop = false;
             // 
-            // comboBox3
+            // cmbConyuge
             // 
-            this.comboBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(386, 79);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(119, 26);
-            this.comboBox3.TabIndex = 55;
+            this.cmbConyuge.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbConyuge.FormattingEnabled = true;
+            this.cmbConyuge.Location = new System.Drawing.Point(140, 127);
+            this.cmbConyuge.Name = "cmbConyuge";
+            this.cmbConyuge.Size = new System.Drawing.Size(119, 26);
+            this.cmbConyuge.TabIndex = 59;
             // 
-            // comboBox4
+            // chkCasado
             // 
-            this.comboBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(263, 33);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(119, 26);
-            this.comboBox4.TabIndex = 56;
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(17, 78);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(119, 26);
-            this.dateTimePicker1.TabIndex = 57;
+            this.chkCasado.AutoSize = true;
+            this.chkCasado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkCasado.ForeColor = System.Drawing.Color.White;
+            this.chkCasado.Location = new System.Drawing.Point(263, 127);
+            this.chkCasado.Name = "chkCasado";
+            this.chkCasado.Size = new System.Drawing.Size(92, 24);
+            this.chkCasado.TabIndex = 60;
+            this.chkCasado.Text = "Casado?";
+            this.chkCasado.UseVisualStyleBackColor = true;
             // 
             // FrmUserAgregarPersona
             // 
@@ -464,6 +470,7 @@
             this.Text = "FrmUserProductoDetalle";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureFoto)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -473,7 +480,7 @@
         private System.Windows.Forms.Button btnCerrar;
         private System.Windows.Forms.Label lblProducto;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.ComboBox cmbCategoria;
+        private System.Windows.Forms.ComboBox cmbEstadoCivil;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
@@ -483,25 +490,25 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtFallecido;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox txtHijos;
+        private System.Windows.Forms.TextBox txtCedula;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.DateTimePicker dtpFecha;
+        private System.Windows.Forms.ComboBox cmbGenero;
+        private System.Windows.Forms.ComboBox cmbRelacionFamiliar;
+        private System.Windows.Forms.ComboBox cmbResidencia;
+        private System.Windows.Forms.PictureBox pictureFoto;
+        private System.Windows.Forms.ComboBox cmbConyuge;
+        private System.Windows.Forms.CheckBox chkCasado;
     }
 }

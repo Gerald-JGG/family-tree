@@ -23,38 +23,7 @@ namespace CapaPresentacion
 
         public void MostrarTop3ProductosMasVendidosEnDGV(string rutaVentas, string rutaUsuarios, string rutaProductos)
         {
-            List<ObjVentaDetalle> detalles = new BOVentaDetalle().LeerVentaDetalles(rutaVentas);
-            List<ObjVenta> ventas = new BOVenta().LeerVentas(rutaVentas);
-            List<ObjProducto> productos = new BOProducto().LeerProductos(rutaProductos);
-            Dictionary<int, (string Nombre, int CantidadTotal)> reporte = new Dictionary<int, (string, int)>();
 
-            // Calcular la cantidad total de ventas de cada producto
-            foreach (var detalle in detalles)
-            {
-                if (productos.Any(p => p.codigoProducto == detalle.codigoProducto))
-                {
-                    var producto = productos.First(p => p.codigoProducto == detalle.codigoProducto);
-
-                    if (reporte.ContainsKey(detalle.codigoProducto))
-                    {
-                        reporte[detalle.codigoProducto] = (producto.nombreProducto, reporte[detalle.codigoProducto].CantidadTotal + detalle.cantidad);
-                    }
-                    else
-                    {
-                        reporte[detalle.codigoProducto] = (producto.nombreProducto, detalle.cantidad);
-                    }
-                }
-            }
-            var top3Productos = reporte.Values.OrderByDescending(r => r.CantidadTotal).Take(3).ToList();
-
-            var listaReporte = top3Productos.Select(r => new
-            {
-                NombreProducto = r.Nombre,
-                CantidadTotal = r.CantidadTotal
-            }).ToList();
-
-            // Asignar el reporte al DataGridView
-            dgvUsuarios.DataSource = listaReporte;
         }
 
         private void button1_Click(object sender, EventArgs e)
