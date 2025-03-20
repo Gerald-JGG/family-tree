@@ -1,6 +1,6 @@
 ﻿namespace CapaPresentacion
 {
-    partial class FrmUserReporte1
+    partial class FrmUserArbolFamiliar
     {
         /// <summary> 
         /// Variable del diseñador necesaria.
@@ -28,21 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dgvUsuarios = new System.Windows.Forms.DataGridView();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvUsuarios)).BeginInit();
+            this.comboBoxCedulas = new System.Windows.Forms.ComboBox();
+            this.treeView1 = new System.Windows.Forms.TreeView();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // dgvUsuarios
-            // 
-            this.dgvUsuarios.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvUsuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvUsuarios.Location = new System.Drawing.Point(15, 51);
-            this.dgvUsuarios.Name = "dgvUsuarios";
-            this.dgvUsuarios.Size = new System.Drawing.Size(822, 466);
-            this.dgvUsuarios.TabIndex = 32;
             // 
             // button1
             // 
@@ -55,44 +47,63 @@
             this.button1.Location = new System.Drawing.Point(622, 5);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(25, 28);
-            this.button1.TabIndex = 34;
+            this.button1.TabIndex = 20;
             this.button1.Text = "↻";
             this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox1
+            // dataGridView1
             // 
-            this.textBox1.BackColor = System.Drawing.Color.MediumSpringGreen;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(653, 5);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(184, 28);
-            this.textBox1.TabIndex = 33;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.dataGridView1.Location = new System.Drawing.Point(3, 55);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.Size = new System.Drawing.Size(846, 479);
+            this.dataGridView1.TabIndex = 17;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(-3, 1);
+            this.label1.Location = new System.Drawing.Point(-3, 3);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(153, 33);
-            this.label1.TabIndex = 35;
-            this.label1.Text = "Reporte 1";
+            this.label1.Size = new System.Drawing.Size(215, 33);
+            this.label1.TabIndex = 16;
+            this.label1.Text = "Arbol Familiar";
             // 
-            // FrmUserReporte1
+            // comboBoxCedulas
+            // 
+            this.comboBoxCedulas.BackColor = System.Drawing.Color.MediumSpringGreen;
+            this.comboBoxCedulas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxCedulas.FormattingEnabled = true;
+            this.comboBoxCedulas.Location = new System.Drawing.Point(653, 5);
+            this.comboBoxCedulas.Name = "comboBoxCedulas";
+            this.comboBoxCedulas.Size = new System.Drawing.Size(184, 28);
+            this.comboBoxCedulas.TabIndex = 43;
+            // 
+            // treeView1
+            // 
+            this.treeView1.Location = new System.Drawing.Point(3, 52);
+            this.treeView1.Name = "treeView1";
+            this.treeView1.Size = new System.Drawing.Size(846, 482);
+            this.treeView1.TabIndex = 44;
+            // 
+            // FrmUserArbolFamiliar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.treeView1);
+            this.Controls.Add(this.comboBoxCedulas);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.dgvUsuarios);
-            this.Name = "FrmUserReporte1";
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.label1);
+            this.Name = "FrmUserArbolFamiliar";
             this.Size = new System.Drawing.Size(852, 537);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvUsuarios)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -100,9 +111,10 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dgvUsuarios;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox comboBoxCedulas;
+        private System.Windows.Forms.TreeView treeView1;
     }
 }

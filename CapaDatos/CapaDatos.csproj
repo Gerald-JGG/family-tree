@@ -44,7 +44,6 @@
     <Compile Include="DAOFamilia.cs" />
     <Compile Include="DAOPersona.cs" />
     <Compile Include="DAOXml.cs" />
-    <Compile Include="DAOUsuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

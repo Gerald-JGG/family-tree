@@ -47,35 +47,41 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmCRUDFamilia.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmCRUDFamilia.Designer.cs">
+      <DependentUpon>FrmCRUDFamilia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCRUDPersona.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmCRUDPersona.Designer.cs">
+      <DependentUpon>FrmCRUDPersona.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmUser.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmUser.Designer.cs">
       <DependentUpon>FrmUser.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmUserMiCarrito.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="FrmUserMiCarrito.Designer.cs">
-      <DependentUpon>FrmUserMiCarrito.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmUserProducto.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="FrmUserProducto.Designer.cs">
-      <DependentUpon>FrmUserProducto.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmUserProductoDetalle.cs">
+    <Compile Include="FrmUserAgregarFamilia.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmUserProductoDetalle.Designer.cs">
-      <DependentUpon>FrmUserProductoDetalle.cs</DependentUpon>
+    <Compile Include="FrmUserAgregarFamilia.Designer.cs">
+      <DependentUpon>FrmUserAgregarFamilia.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmUserReporte1.cs">
+    <Compile Include="FrmUserArbolFamiliar.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="FrmUserReporte1.Designer.cs">
-      <DependentUpon>FrmUserReporte1.cs</DependentUpon>
+    <Compile Include="FrmUserArbolFamiliar.Designer.cs">
+      <DependentUpon>FrmUserArbolFamiliar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUserAgregarPersona.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUserAgregarPersona.Designer.cs">
+      <DependentUpon>FrmUserAgregarPersona.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmUserReporte2.cs">
       <SubType>UserControl</SubType>
@@ -91,20 +97,23 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmCRUDFamilia.resx">
+      <DependentUpon>FrmCRUDFamilia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCRUDPersona.resx">
+      <DependentUpon>FrmCRUDPersona.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmUser.resx">
       <DependentUpon>FrmUser.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmUserMiCarrito.resx">
-      <DependentUpon>FrmUserMiCarrito.cs</DependentUpon>
+    <EmbeddedResource Include="FrmUserAgregarFamilia.resx">
+      <DependentUpon>FrmUserAgregarFamilia.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmUserProducto.resx">
-      <DependentUpon>FrmUserProducto.cs</DependentUpon>
+    <EmbeddedResource Include="FrmUserArbolFamiliar.resx">
+      <DependentUpon>FrmUserArbolFamiliar.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmUserProductoDetalle.resx">
-      <DependentUpon>FrmUserProductoDetalle.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmUserReporte1.resx">
-      <DependentUpon>FrmUserReporte1.cs</DependentUpon>
+    <EmbeddedResource Include="FrmUserAgregarPersona.resx">
+      <DependentUpon>FrmUserAgregarPersona.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmUserReporte2.resx">
       <DependentUpon>FrmUserReporte2.cs</DependentUpon>

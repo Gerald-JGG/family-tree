@@ -44,7 +44,6 @@
     <Compile Include="BOFamilia.cs" />
     <Compile Include="BOPersona.cs" />
     <Compile Include="BOXml.cs" />
-    <Compile Include="BOUsuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

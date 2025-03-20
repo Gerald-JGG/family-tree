@@ -17,15 +17,13 @@ namespace CapaNegocio
         // Crear una nueva familia
         public void CrearFamilia(ObjFamilia familia, string ruta)
         {
-            // Verificar si ya existe una familia con el mismo nombre
-            if (daoFamilia.LeerFamiliaPorNombre(familia.Nombre, ruta) != null)
+            if (daoFamilia.LeerFamiliaPorId(familia.Id, ruta) != null)
             {
                 throw new Exception("La familia con ese nombre ya existe.");
             }
             daoFamilia.CrearFamilia(familia, ruta);
         }
 
-        // Leer todas las familias
         public List<ObjFamilia> LeerFamilias(string ruta)
         {
             return daoFamilia.LeerFamilias(ruta);
@@ -34,7 +32,7 @@ namespace CapaNegocio
         // Modificar una familia existente
         public void ModificarFamilia(ObjFamilia familia, string ruta)
         {
-            ObjFamilia familiaExistente = daoFamilia.LeerFamiliaPorNombre(familia.Nombre, ruta);
+            ObjFamilia familiaExistente = daoFamilia.LeerFamiliaPorId(familia.Id, ruta);
             if (familiaExistente == null)
             {
                 throw new Exception("La familia no existe.");
@@ -43,14 +41,14 @@ namespace CapaNegocio
         }
 
         // Eliminar una familia por nombre
-        public void EliminarFamilia(string nombre, string ruta)
+        public void EliminarFamilia(int id, string ruta)
         {
-            ObjFamilia familiaExistente = daoFamilia.LeerFamiliaPorNombre(nombre, ruta);
+            ObjFamilia familiaExistente = daoFamilia.LeerFamiliaPorId(id, ruta);
             if (familiaExistente == null)
             {
                 throw new Exception("La familia no existe.");
             }
-            daoFamilia.EliminarFamilia(nombre, ruta);
+            daoFamilia.EliminarFamilia(id, ruta);
         }
     }
 }

@@ -7,8 +7,6 @@ namespace CapaDatos
 {
     public class DAOPersona
     {
-        private XmlDocument doc;
-
         // Crear una nueva persona en el archivo XML
         public void CrearPersona(ObjPersona persona, string ruta)
         {
@@ -17,68 +15,30 @@ namespace CapaDatos
 
             XmlNode personaNode = doc.CreateElement("persona");
 
-            XmlElement cedula = doc.CreateElement("cedula");
-            cedula.InnerText = persona.Cedula;
-            personaNode.AppendChild(cedula);
+            void AgregarElemento(string nombre, string valor)
+            {
+                XmlElement element = doc.CreateElement(nombre);
+                element.InnerText = valor;
+                personaNode.AppendChild(element);
+            }
 
-            XmlElement nombre = doc.CreateElement("nombre");
-            nombre.InnerText = persona.Nombre;
-            personaNode.AppendChild(nombre);
+            AgregarElemento("cedula", persona.Cedula);
+            AgregarElemento("nombre", persona.Nombre);
+            AgregarElemento("genero", persona.Genero);
+            AgregarElemento("fechaNacimiento", persona.FechaNacimiento.ToString("yyyy-MM-dd"));
+            AgregarElemento("edad", persona.Edad.ToString());
+            AgregarElemento("lugarResidencia", persona.LugarResidencia);
+            AgregarElemento("estadoCivil", persona.EstadoCivil);
+            AgregarElemento("fallecido", persona.Fallecido.ToString());
+            AgregarElemento("casado", persona.Casado.ToString());
+            AgregarElemento("relacionFamiliar", persona.RelacionFamiliar);
+            AgregarElemento("foto", persona.Foto);
 
-            XmlElement genero = doc.CreateElement("genero");
-            genero.InnerText = persona.Genero;
-            personaNode.AppendChild(genero);
-
-            XmlElement fechaNacimiento = doc.CreateElement("fechaNacimiento");
-            fechaNacimiento.InnerText = persona.FechaNacimiento.ToString("yyyy-MM-dd");
-            personaNode.AppendChild(fechaNacimiento);
-
-            XmlElement edad = doc.CreateElement("edad");
-            edad.InnerText = persona.Edad.ToString();
-            personaNode.AppendChild(edad);
-
-            XmlElement lugarResidencia = doc.CreateElement("lugarResidencia");
-            lugarResidencia.InnerText = persona.LugarResidencia;
-            personaNode.AppendChild(lugarResidencia);
-
-            XmlElement estadoCivil = doc.CreateElement("estadoCivil");
-            estadoCivil.InnerText = persona.EstadoCivil;
-            personaNode.AppendChild(estadoCivil);
-
-            XmlElement fallecido = doc.CreateElement("fallecido");
-            fallecido.InnerText = persona.Fallecido.ToString();
-            personaNode.AppendChild(fallecido);
-
-            XmlElement casado = doc.CreateElement("casado");
-            casado.InnerText = persona.Casado.ToString();
-            personaNode.AppendChild(casado);
-
-            XmlElement relacionFamiliar = doc.CreateElement("relacionFamiliar");
-            relacionFamiliar.InnerText = persona.RelacionFamiliar;
-            personaNode.AppendChild(relacionFamiliar);
-
-            XmlElement foto = doc.CreateElement("foto");
-            foto.InnerText = persona.Foto;
-            personaNode.AppendChild(foto);
-
-            // Si tiene cónyuge, agregar la relación
             if (persona.Conyuge != null)
-            {
-                XmlElement conyuge = doc.CreateElement("conyuge");
-                conyuge.InnerText = persona.Conyuge.Cedula;
-                personaNode.AppendChild(conyuge);
-            }
+                AgregarElemento("conyuge", persona.Conyuge.Cedula);
 
-            // Agregar los hijos
-            if (persona.Hijos.Count > 0)
-            {
-                foreach (var hijo in persona.Hijos)
-                {
-                    XmlElement hijoElement = doc.CreateElement("hijo");
-                    hijoElement.InnerText = hijo.Cedula;
-                    personaNode.AppendChild(hijoElement);
-                }
-            }
+            foreach (var hijo in persona.Hijos)
+                AgregarElemento("hijo", hijo.Cedula);
 
             XmlNode rootPersonas = doc.SelectSingleNode("/datos/personas");
             rootPersonas.AppendChild(personaNode);
@@ -96,8 +56,10 @@ namespace CapaDatos
 
             foreach (XmlNode node in nodeList)
             {
+                // Modificar para no asignar un valor nulo a Familia (se usa 0 si no existe el campo en XML)
                 ObjPersona persona = new ObjPersona(
                     node["cedula"].InnerText,
+                    0,  // Valor por defecto para Familia
                     node["nombre"].InnerText,
                     node["genero"].InnerText,
                     Convert.ToDateTime(node["fechaNacimiento"].InnerText),
@@ -112,18 +74,16 @@ namespace CapaDatos
                     Foto = node["foto"].InnerText
                 };
 
-                // Leer cónyuge (si tiene)
-                if (node["conyuge"] != null)
+                // Asignar Conyuge solo si existe en XML
+                if (node["conyuge"] != null && !string.IsNullOrEmpty(node["conyuge"].InnerText))
                 {
-                    persona.Conyuge = new ObjPersona(node["conyuge"].InnerText, "", "", DateTime.MinValue, "", "", "");
+                    persona.Conyuge = new ObjPersona(node["conyuge"].InnerText, 0, "", "", DateTime.MinValue, "", "", "");
                 }
 
-                // Leer los hijos (si los tiene)
-                persona.Hijos = new List<ObjPersona>();
+                // Asignar Hijos
                 foreach (XmlNode hijoNode in node.SelectNodes("hijo"))
                 {
-                    ObjPersona hijo = new ObjPersona(hijoNode.InnerText, "", "", DateTime.MinValue, "", "", "");
-                    persona.Hijos.Add(hijo);
+                    persona.Hijos.Add(new ObjPersona(hijoNode.InnerText, 0, "", "", DateTime.MinValue, "", "", ""));
                 }
 
                 personas.Add(persona);
@@ -131,6 +91,7 @@ namespace CapaDatos
 
             return personas;
         }
+
 
         // Modificar una persona en el archivo XML
         public void ModificarPersona(ObjPersona persona, string ruta)
@@ -153,18 +114,11 @@ namespace CapaDatos
                 personaNode["relacionFamiliar"].InnerText = persona.RelacionFamiliar;
                 personaNode["foto"].InnerText = persona.Foto;
 
-                // Modificar cónyuge
                 if (persona.Conyuge != null)
-                {
                     personaNode["conyuge"].InnerText = persona.Conyuge.Cedula;
-                }
 
-                // Modificar los hijos
-                var hijosNodeList = personaNode.SelectNodes("hijo");
-                foreach (XmlNode hijoNode in hijosNodeList)
-                {
+                foreach (XmlNode hijoNode in personaNode.SelectNodes("hijo"))
                     personaNode.RemoveChild(hijoNode);
-                }
 
                 foreach (var hijo in persona.Hijos)
                 {
@@ -200,7 +154,6 @@ namespace CapaDatos
             }
         }
 
-        // Buscar una persona por cédula
         public ObjPersona BuscarPersonaPorCedula(string cedula, string ruta)
         {
             XmlDocument doc = new XmlDocument();
@@ -209,26 +162,49 @@ namespace CapaDatos
 
             if (personaNode != null)
             {
-                return new ObjPersona(
+                ObjPersona persona = new ObjPersona(
                     personaNode["cedula"].InnerText,
+                    Convert.ToInt32(personaNode["familia"].InnerText),
                     personaNode["nombre"].InnerText,
                     personaNode["genero"].InnerText,
                     Convert.ToDateTime(personaNode["fechaNacimiento"].InnerText),
                     personaNode["lugarResidencia"].InnerText,
                     personaNode["estadoCivil"].InnerText,
                     personaNode["relacionFamiliar"].InnerText
-                )
+                );
+
+                // Datos adicionales
+                persona.Fallecido = Convert.ToBoolean(personaNode["fallecido"].InnerText);
+                persona.Casado = Convert.ToBoolean(personaNode["casado"].InnerText);
+                persona.Foto = personaNode["foto"]?.InnerText ?? (persona.Genero == "Masculino" ? "avatar_masculino.jpg" : "avatar_femenino.jpg");
+
+                // Relaciones (Hijos y Padres)
+                persona.Hijos = new List<ObjPersona>();
+                persona.Padres = new List<ObjPersona>();
+
+                XmlNodeList hijosNodes = personaNode.SelectNodes("hijos/persona");
+                foreach (XmlNode hijoNode in hijosNodes)
                 {
-                    Edad = Convert.ToInt32(personaNode["edad"].InnerText),
-                    Fallecido = Convert.ToBoolean(personaNode["fallecido"].InnerText),
-                    Casado = Convert.ToBoolean(personaNode["casado"].InnerText),
-                    Foto = personaNode["foto"].InnerText
-                };
+                    ObjPersona hijo = BuscarPersonaPorCedula(hijoNode.InnerText, ruta);
+                    if (hijo != null)
+                    {
+                        persona.Hijos.Add(hijo);
+                    }
+                }
+
+                XmlNodeList padresNodes = personaNode.SelectNodes("padres/persona");
+                foreach (XmlNode padreNode in padresNodes)
+                {
+                    ObjPersona padre = BuscarPersonaPorCedula(padreNode.InnerText, ruta);
+                    if (padre != null)
+                    {
+                        persona.Padres.Add(padre);
+                    }
+                }
+
+                return persona;
             }
-            else
-            {
-                return null;
-            }
+            return null;
         }
     }
 }
