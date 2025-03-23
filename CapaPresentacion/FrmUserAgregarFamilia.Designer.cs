@@ -28,14 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cboFamilias = new System.Windows.Forms.ComboBox();
             this.button3 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.btnLimpiar = new System.Windows.Forms.Button();
+            this.btnModificar = new System.Windows.Forms.Button();
+            this.btnEliminar = new System.Windows.Forms.Button();
             this.btnAñadir = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.txtNombre = new System.Windows.Forms.TextBox();
@@ -44,16 +42,17 @@
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // comboBox1
+            // cboFamilias
             // 
-            this.comboBox1.BackColor = System.Drawing.Color.MediumSpringGreen;
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(306, 8);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(166, 32);
-            this.comboBox1.TabIndex = 58;
+            this.cboFamilias.BackColor = System.Drawing.Color.MediumSpringGreen;
+            this.cboFamilias.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboFamilias.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.cboFamilias.FormattingEnabled = true;
+            this.cboFamilias.Location = new System.Drawing.Point(306, 8);
+            this.cboFamilias.Name = "cboFamilias";
+            this.cboFamilias.Size = new System.Drawing.Size(166, 32);
+            this.cboFamilias.TabIndex = 58;
+            this.cboFamilias.SelectedIndexChanged += new System.EventHandler(this.cboFamilias_SelectedIndexChanged_1);
             // 
             // button3
             // 
@@ -69,86 +68,69 @@
             this.button3.TabIndex = 57;
             this.button3.Text = "↻";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            this.panel2.Controls.Add(this.button4);
-            this.panel2.Controls.Add(this.button2);
-            this.panel2.Controls.Add(this.button1);
-            this.panel2.Controls.Add(this.textBox7);
-            this.panel2.Controls.Add(this.label3);
+            this.panel2.Controls.Add(this.btnLimpiar);
+            this.panel2.Controls.Add(this.btnModificar);
+            this.panel2.Controls.Add(this.btnEliminar);
             this.panel2.Controls.Add(this.btnAñadir);
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.txtNombre);
             this.panel2.Location = new System.Drawing.Point(12, 50);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(531, 231);
+            this.panel2.Size = new System.Drawing.Size(531, 105);
             this.panel2.TabIndex = 56;
             // 
-            // button4
+            // btnLimpiar
             // 
-            this.button4.BackColor = System.Drawing.Color.MediumSpringGreen;
-            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(392, 181);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(119, 30);
-            this.button4.TabIndex = 53;
-            this.button4.Text = "Limpiar";
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnLimpiar.BackColor = System.Drawing.Color.MediumSpringGreen;
+            this.btnLimpiar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLimpiar.FlatAppearance.BorderSize = 0;
+            this.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLimpiar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimpiar.ForeColor = System.Drawing.Color.White;
+            this.btnLimpiar.Location = new System.Drawing.Point(392, 59);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(119, 30);
+            this.btnLimpiar.TabIndex = 53;
+            this.btnLimpiar.Text = "Limpiar";
+            this.btnLimpiar.UseVisualStyleBackColor = false;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click_1);
             // 
-            // button2
+            // btnModificar
             // 
-            this.button2.BackColor = System.Drawing.Color.MediumSpringGreen;
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(142, 181);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(119, 30);
-            this.button2.TabIndex = 49;
-            this.button2.Text = "Modificar";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnModificar.BackColor = System.Drawing.Color.MediumSpringGreen;
+            this.btnModificar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnModificar.FlatAppearance.BorderSize = 0;
+            this.btnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnModificar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModificar.ForeColor = System.Drawing.Color.White;
+            this.btnModificar.Location = new System.Drawing.Point(142, 59);
+            this.btnModificar.Name = "btnModificar";
+            this.btnModificar.Size = new System.Drawing.Size(119, 30);
+            this.btnModificar.TabIndex = 49;
+            this.btnModificar.Text = "Modificar";
+            this.btnModificar.UseVisualStyleBackColor = false;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click_1);
             // 
-            // button1
+            // btnEliminar
             // 
-            this.button1.BackColor = System.Drawing.Color.MediumSpringGreen;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(267, 181);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(119, 30);
-            this.button1.TabIndex = 48;
-            this.button1.Text = "Eliminar";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // textBox7
-            // 
-            this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(17, 33);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(119, 26);
-            this.textBox7.TabIndex = 47;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(14, 15);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(22, 15);
-            this.label3.TabIndex = 25;
-            this.label3.Text = "ID:";
+            this.btnEliminar.BackColor = System.Drawing.Color.MediumSpringGreen;
+            this.btnEliminar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEliminar.FlatAppearance.BorderSize = 0;
+            this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEliminar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminar.ForeColor = System.Drawing.Color.White;
+            this.btnEliminar.Location = new System.Drawing.Point(267, 59);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(119, 30);
+            this.btnEliminar.TabIndex = 48;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.UseVisualStyleBackColor = false;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click_1);
             // 
             // btnAñadir
             // 
@@ -158,19 +140,20 @@
             this.btnAñadir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAñadir.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAñadir.ForeColor = System.Drawing.Color.White;
-            this.btnAñadir.Location = new System.Drawing.Point(17, 181);
+            this.btnAñadir.Location = new System.Drawing.Point(17, 59);
             this.btnAñadir.Name = "btnAñadir";
             this.btnAñadir.Size = new System.Drawing.Size(119, 30);
             this.btnAñadir.TabIndex = 16;
             this.btnAñadir.Text = "Añadir";
             this.btnAñadir.UseVisualStyleBackColor = false;
+            this.btnAñadir.Click += new System.EventHandler(this.btnAñadir_Click_1);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(137, 15);
+            this.label6.Location = new System.Drawing.Point(108, 21);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(55, 15);
             this.label6.TabIndex = 10;
@@ -179,9 +162,9 @@
             // txtNombre
             // 
             this.txtNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombre.Location = new System.Drawing.Point(140, 33);
+            this.txtNombre.Location = new System.Drawing.Point(169, 15);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(119, 26);
+            this.txtNombre.Size = new System.Drawing.Size(240, 26);
             this.txtNombre.TabIndex = 8;
             // 
             // lblProducto
@@ -209,20 +192,22 @@
             this.btnCerrar.TabIndex = 59;
             this.btnCerrar.Text = "X";
             this.btnCerrar.UseVisualStyleBackColor = false;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // FrmUserAgregarFamilia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
-            this.ClientSize = new System.Drawing.Size(555, 295);
+            this.ClientSize = new System.Drawing.Size(555, 167);
             this.Controls.Add(this.btnCerrar);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cboFamilias);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.lblProducto);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmUserAgregarFamilia";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmUserAgregarFamilia";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -233,14 +218,12 @@
 
         #endregion
 
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cboFamilias;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btnLimpiar;
+        private System.Windows.Forms.Button btnModificar;
+        private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnAñadir;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtNombre;

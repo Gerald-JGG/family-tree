@@ -47,18 +47,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FrmCRUDFamilia.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="FrmCRUDFamilia.Designer.cs">
-      <DependentUpon>FrmCRUDFamilia.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmCRUDPersona.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="FrmCRUDPersona.Designer.cs">
-      <DependentUpon>FrmCRUDPersona.cs</DependentUpon>
-    </Compile>
     <Compile Include="FrmUser.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,6 +58,18 @@
     </Compile>
     <Compile Include="FrmUserAgregarFamilia.Designer.cs">
       <DependentUpon>FrmUserAgregarFamilia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUserAgregarHijo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUserAgregarHijo.Designer.cs">
+      <DependentUpon>FrmUserAgregarHijo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUserAgregarPareja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUserAgregarPareja.Designer.cs">
+      <DependentUpon>FrmUserAgregarPareja.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmUserArbolFamiliar.cs">
       <SubType>UserControl</SubType>
@@ -97,17 +97,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FrmCRUDFamilia.resx">
-      <DependentUpon>FrmCRUDFamilia.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmCRUDPersona.resx">
-      <DependentUpon>FrmCRUDPersona.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FrmUser.resx">
       <DependentUpon>FrmUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmUserAgregarFamilia.resx">
       <DependentUpon>FrmUserAgregarFamilia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUserAgregarHijo.resx">
+      <DependentUpon>FrmUserAgregarHijo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUserAgregarPareja.resx">
+      <DependentUpon>FrmUserAgregarPareja.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmUserArbolFamiliar.resx">
       <DependentUpon>FrmUserArbolFamiliar.cs</DependentUpon>
@@ -152,6 +152,9 @@
       <Project>{d66f58ee-6e00-4e14-b179-a04873f091a3}</Project>
       <Name>CapaObjetos</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Imagenes\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

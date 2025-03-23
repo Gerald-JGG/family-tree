@@ -50,5 +50,11 @@ namespace CapaNegocio
             }
             daoFamilia.EliminarFamilia(id, ruta);
         }
+
+        public ObjFamilia LeerFamiliaPorId(int id, string ruta)
+        {
+            ObjFamilia familiaExistente = daoFamilia.LeerFamiliaPorId(id, ruta);
+            return familiaExistente;
+        }
     }
 }

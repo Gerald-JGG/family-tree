@@ -16,39 +16,13 @@ namespace CapaObjetos
         public int Edad { get; set; } 
         public string LugarResidencia { get; set; } 
         public string EstadoCivil { get; set; }
-        public bool Casado { get; set; }
-        public ObjPersona Conyuge { get; set; }
+        public int Conyuge { get; set; }
         public bool Fallecido { get; set; }  
         public string RelacionFamiliar { get; set; }
         public string Foto { get; set; }
-        public List<ObjPersona> Hijos { get; set; }
-        public List<ObjPersona> Padres { get; set; }
+        public int Padre { get; set; }
+        public int Madre { get; set; }
 
         public ObjPersona() { }
-
-        public ObjPersona(string cedula, int familia, string nombre, string genero, DateTime fechaNacimiento, string lugarResidencia, string estadoCivil, string relacionFamiliar)
-        {
-            Cedula = cedula;
-            Familia = familia;
-            Nombre = nombre;
-            Genero = genero;
-            FechaNacimiento = fechaNacimiento;
-            Edad = CalcularEdad();
-            LugarResidencia = lugarResidencia;
-            EstadoCivil = estadoCivil;
-            Fallecido = false;
-            Casado = false;
-            RelacionFamiliar = relacionFamiliar;
-            Foto = genero == "Masculino" ? "avatar_masculino.jpg" : "avatar_femenino.jpg";
-            Hijos = new List<ObjPersona>();
-            Padres = new List<ObjPersona>();
-        }
-
-        public int CalcularEdad()
-        {
-            var edad = DateTime.Now.Year - FechaNacimiento.Year;
-            if (FechaNacimiento > DateTime.Now.AddYears(-edad)) edad--;
-            return edad;
-        }
     }
 }

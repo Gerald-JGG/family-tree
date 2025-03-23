@@ -52,10 +52,6 @@ namespace CapaDatos
         {
             List<ObjFamilia> familias = LeerFamilias(ruta);
             ObjFamilia familia = familias.Find(f => f.Id == id);
-            if (familia == null)
-            {
-                throw new Exception("Familia no encontrada.");
-            }
             return familia;
         }
 
