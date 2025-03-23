@@ -227,6 +227,8 @@
             this.cmbRelacionFamiliar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbRelacionFamiliar.FormattingEnabled = true;
             this.cmbRelacionFamiliar.Items.AddRange(new object[] {
+            "Bisabuelos",
+            "Abuelos",
             "Tios",
             "Primos",
             "Padres",
@@ -234,7 +236,10 @@
             "Sobrinos",
             "Hijos",
             "Nietos",
-            "Bisnietos"});
+            "Bisnietos",
+            "Cuñados",
+            "Yernos",
+            "Esposa"});
             this.cmbRelacionFamiliar.Location = new System.Drawing.Point(386, 78);
             this.cmbRelacionFamiliar.Name = "cmbRelacionFamiliar";
             this.cmbRelacionFamiliar.Size = new System.Drawing.Size(119, 26);

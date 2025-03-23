@@ -46,12 +46,19 @@ namespace CapaPresentacion
                 MessageBox.Show("Ingrese un nombre para la familia.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
+            List<ObjFamilia> familias = boFamilia.LeerFamilias(rutaArchivo);
+            int nuevoId = 1;
+            if (familias.Count > 0)
+            {
+                nuevoId = familias.Max(f => f.Id) + 1;
+            }
+            ObjFamilia nuevaFamilia = new ObjFamilia(nuevoId, nombreFamilia);
 
             // Asegurar que se ingresen 8 bisabuelos
             int contadorBisabuelos = 0;
-            while (contadorBisabuelos < 8)
+            while (contadorBisabuelos < 4)
             {
-                FrmUserAgregarBisabuelo formBisabuelos = new FrmUserAgregarBisabuelo();
+                FrmUserAgregarBisabuelo formBisabuelos = new FrmUserAgregarBisabuelo(nuevaFamilia);
                 if (formBisabuelos.ShowDialog() == DialogResult.OK)
                 {
                     contadorBisabuelos++;
@@ -64,9 +71,9 @@ namespace CapaPresentacion
 
             // Asegurar que se ingresen 4 abuelos
             int contadorAbuelos = 0;
-            while (contadorAbuelos < 4)
+            while (contadorAbuelos < 2)
             {
-                FrmUserAgregarAbuelo formAbuelos = new FrmUserAgregarAbuelo();
+                FrmUserAgregarAbuelo formAbuelos = new FrmUserAgregarAbuelo(nuevaFamilia);
                 if (formAbuelos.ShowDialog() == DialogResult.OK)
                 {
                     contadorAbuelos++;
@@ -76,16 +83,7 @@ namespace CapaPresentacion
                     MessageBox.Show("Debe agregar los abuelos antes de continuar.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
-            List<ObjFamilia> familias = boFamilia.LeerFamilias(rutaArchivo);
-            int nuevoId = 1;
-            if (familias.Count > 0)
-            {
-                nuevoId = familias.Max(f => f.Id) + 1;
-            }
-
-            ObjFamilia nuevaFamilia = new ObjFamilia(nuevoId, nombreFamilia);
             boFamilia.CrearFamilia(nuevaFamilia, rutaArchivo);
-
             MessageBox.Show("Familia añadida correctamente.");
             CargarFamilias();
             LimpiarCampos();

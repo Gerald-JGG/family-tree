@@ -17,11 +17,12 @@ namespace CapaPresentacion
     {
         private BOPersona boPersona;
         private string rutaArchivo = "datos.xml";
-
-        public FrmUserAgregarBisabuelo()
+        private ObjFamilia familia;
+        public FrmUserAgregarBisabuelo(ObjFamilia familia)
         {
             InitializeComponent();
             boPersona = new BOPersona();
+            this.familia = familia;
         }
 
         private void btnCerrar_Click_1(object sender, EventArgs e)
@@ -88,6 +89,7 @@ namespace CapaPresentacion
             ObjPersona abuelo = new ObjPersona
             {
                 Cedula = txtCedula.Text.Trim(),
+                Familia = familia.Id,
                 Nombre = txtNombre.Text.Trim(),
                 Genero = cmbGenero.SelectedItem.ToString(),
                 FechaNacimiento = dtpFecha.Value,
@@ -95,7 +97,7 @@ namespace CapaPresentacion
                 EstadoCivil = "Casado",
                 Conyuge = int.TryParse(txtCedula2.Text.Trim(), out int cedulaConyuge) ? cedulaConyuge : 0,
                 Fallecido = chkFallecido.Checked,
-                RelacionFamiliar = "Abuelo",
+                RelacionFamiliar = "Bisabuelos",
                 Foto = rutaImagenAbuelo
             };
 
@@ -103,6 +105,7 @@ namespace CapaPresentacion
             ObjPersona abuela = new ObjPersona
             {
                 Cedula = txtCedula2.Text.Trim(),
+                Familia = familia.Id,
                 Nombre = txtNombre2.Text.Trim(),
                 Genero = cmbGenero2.SelectedItem.ToString(),
                 FechaNacimiento = dtpFecha2.Value,
@@ -110,7 +113,7 @@ namespace CapaPresentacion
                 EstadoCivil = "Casado",
                 Conyuge = int.TryParse(txtCedula.Text.Trim(), out int cedulaPersona) ? cedulaPersona : 0,
                 Fallecido = chkFallecido2.Checked,
-                RelacionFamiliar = "Abuela",
+                RelacionFamiliar = "Bisabuelos",
                 Foto = rutaImagenAbuela
             };
 
@@ -118,7 +121,7 @@ namespace CapaPresentacion
             if (abuelo.Fallecido || abuela.Fallecido)
             {
                 abuelo.EstadoCivil = "Viudo";
-                abuela.EstadoCivil = "Viuda";
+                abuela.EstadoCivil = "Viudo";
             }
 
             // Guardar datos de abuelo y abuela en el archivo

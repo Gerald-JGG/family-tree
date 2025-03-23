@@ -507,6 +507,7 @@
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmUserAgregarBisabuelo";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmUserAgregarBisabuelo";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

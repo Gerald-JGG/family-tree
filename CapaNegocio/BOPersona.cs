@@ -58,5 +58,11 @@ namespace CapaNegocio
             ObjPersona persona = daoPersona.BuscarPersonaPorCedula(cedula, ruta);
             return persona;
         }
+
+        public ObjPersona BuscarPersonaPorNombre(string nombre, string ruta)
+        {
+            ObjPersona persona = daoPersona.BuscarPersonaPorNombre(nombre, ruta);
+            return persona;
+        }
     }
 }

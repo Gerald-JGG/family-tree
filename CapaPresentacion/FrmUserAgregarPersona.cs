@@ -394,6 +394,7 @@ namespace CapaPresentacion
                     chkFallecido.Checked = personaSeleccionada.Fallecido;
                     cmbRelacionFamiliar.SelectedItem = personaSeleccionada.RelacionFamiliar;
 
+
                     string rutaFoto = personaSeleccionada.Foto;
                     if (!string.IsNullOrEmpty(rutaFoto) && File.Exists(rutaFoto))
                     {
@@ -503,6 +504,5 @@ namespace CapaPresentacion
                 }
             }
         }
-
     }
 }

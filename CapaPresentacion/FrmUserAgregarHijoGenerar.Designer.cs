@@ -99,7 +99,6 @@
             this.btnAñadir.TabIndex = 16;
             this.btnAñadir.Text = "Añadir";
             this.btnAñadir.UseVisualStyleBackColor = false;
-            this.btnAñadir.Click += new System.EventHandler(this.btnAñadir_Click);
             // 
             // panel2
             // 

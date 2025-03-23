@@ -157,5 +157,36 @@ namespace CapaDatos
             }
             return null;
         }
+
+        // Buscar una persona por nombre en el archivo XML
+        public ObjPersona BuscarPersonaPorNombre(string nombre, string ruta)
+        {
+            XmlDocument doc = new XmlDocument();
+            doc.Load(ruta);
+            XmlNode personaNode = doc.SelectSingleNode($"/datos/personas/persona[nombre='{nombre}']");
+
+            if (personaNode != null)
+            {
+                ObjPersona persona = new ObjPersona
+                {
+                    Cedula = personaNode["cedula"].InnerText,
+                    Familia = Convert.ToInt32(personaNode["familia"].InnerText),
+                    Nombre = personaNode["nombre"].InnerText,
+                    Genero = personaNode["genero"].InnerText,
+                    FechaNacimiento = Convert.ToDateTime(personaNode["fechaNacimiento"].InnerText),
+                    LugarResidencia = personaNode["lugarResidencia"].InnerText,
+                    EstadoCivil = personaNode["estadoCivil"].InnerText,
+                    RelacionFamiliar = personaNode["relacionFamiliar"].InnerText,
+                    Fallecido = Convert.ToBoolean(personaNode["fallecido"].InnerText),
+                    Foto = personaNode["foto"]?.InnerText ?? (personaNode["genero"].InnerText == "Masculino" ? "avatar_masculino.jpg" : "avatar_femenino.jpg"),
+                    Conyuge = Convert.ToInt32(personaNode["conyuge"]?.InnerText ?? "0"),
+                    Padre = Convert.ToInt32(personaNode["padre"]?.InnerText ?? "0"),
+                    Madre = Convert.ToInt32(personaNode["madre"]?.InnerText ?? "0"),
+                    Edad = Convert.ToInt32(personaNode["edad"]?.InnerText)
+                };
+                return persona;
+            }
+            return null;
+        }
     }
 }

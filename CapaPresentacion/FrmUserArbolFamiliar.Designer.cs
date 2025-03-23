@@ -32,7 +32,7 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.treeView1 = new System.Windows.Forms.TreeView();
+            this.treeViewFamilia = new System.Windows.Forms.TreeView();
             this.button5 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.btnHacerUnion = new System.Windows.Forms.Button();
@@ -54,6 +54,7 @@
             this.button1.TabIndex = 20;
             this.button1.Text = "↻";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // dataGridView1
             // 
@@ -89,12 +90,12 @@
             this.comboBox1.TabIndex = 43;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
-            // treeView1
+            // treeViewFamilia
             // 
-            this.treeView1.Location = new System.Drawing.Point(3, 52);
-            this.treeView1.Name = "treeView1";
-            this.treeView1.Size = new System.Drawing.Size(846, 433);
-            this.treeView1.TabIndex = 44;
+            this.treeViewFamilia.Location = new System.Drawing.Point(3, 52);
+            this.treeViewFamilia.Name = "treeViewFamilia";
+            this.treeViewFamilia.Size = new System.Drawing.Size(846, 433);
+            this.treeViewFamilia.TabIndex = 44;
             // 
             // button5
             // 
@@ -169,7 +170,7 @@
             this.Controls.Add(this.btnHacerUnion);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button5);
-            this.Controls.Add(this.treeView1);
+            this.Controls.Add(this.treeViewFamilia);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
@@ -188,7 +189,7 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TreeView treeView1;
+        private System.Windows.Forms.TreeView treeViewFamilia;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnHacerUnion;
