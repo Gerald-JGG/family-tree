@@ -1,6 +1,6 @@
 ﻿namespace CapaPresentacion
 {
-    partial class FrmUserAgregarPersona
+    partial class FrmUserAgregarAbuelo
     {
         /// <summary>
         /// Required designer variable.
@@ -28,22 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnCerrar = new System.Windows.Forms.Button();
-            this.lblProducto = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.txtConyuge = new System.Windows.Forms.TextBox();
             this.btnUnionPareja = new System.Windows.Forms.Button();
             this.pictureFoto = new System.Windows.Forms.PictureBox();
             this.btnSeleccionarFoto = new System.Windows.Forms.Button();
             this.chkFallecido = new System.Windows.Forms.CheckBox();
-            this.cmbPadres = new System.Windows.Forms.ComboBox();
+            this.cmbPadre2 = new System.Windows.Forms.ComboBox();
+            this.cmbPadre1 = new System.Windows.Forms.ComboBox();
             this.dtpFecha = new System.Windows.Forms.DateTimePicker();
             this.cmbGenero = new System.Windows.Forms.ComboBox();
             this.cmbRelacionFamiliar = new System.Windows.Forms.ComboBox();
             this.cmbResidencia = new System.Windows.Forms.ComboBox();
-            this.btnLimpiar = new System.Windows.Forms.Button();
-            this.btnModificar = new System.Windows.Forms.Button();
-            this.btnEliminar = new System.Windows.Forms.Button();
             this.txtCedula = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
@@ -59,38 +55,12 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.txtNombre = new System.Windows.Forms.TextBox();
+            this.lblProducto = new System.Windows.Forms.Label();
             this.cmbPersonas = new System.Windows.Forms.ComboBox();
             this.button3 = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureFoto)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btnCerrar
-            // 
-            this.btnCerrar.BackColor = System.Drawing.Color.Maroon;
-            this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCerrar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btnCerrar.FlatAppearance.BorderSize = 0;
-            this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCerrar.ForeColor = System.Drawing.Color.White;
-            this.btnCerrar.Location = new System.Drawing.Point(519, 12);
-            this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(24, 23);
-            this.btnCerrar.TabIndex = 3;
-            this.btnCerrar.Text = "X";
-            this.btnCerrar.UseVisualStyleBackColor = false;
-            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
-            // 
-            // lblProducto
-            // 
-            this.lblProducto.AutoSize = true;
-            this.lblProducto.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblProducto.ForeColor = System.Drawing.Color.White;
-            this.lblProducto.Location = new System.Drawing.Point(12, 8);
-            this.lblProducto.Name = "lblProducto";
-            this.lblProducto.Size = new System.Drawing.Size(211, 28);
-            this.lblProducto.TabIndex = 0;
-            this.lblProducto.Text = "Agregar Persona";
             // 
             // panel2
             // 
@@ -100,14 +70,12 @@
             this.panel2.Controls.Add(this.pictureFoto);
             this.panel2.Controls.Add(this.btnSeleccionarFoto);
             this.panel2.Controls.Add(this.chkFallecido);
-            this.panel2.Controls.Add(this.cmbPadres);
+            this.panel2.Controls.Add(this.cmbPadre2);
+            this.panel2.Controls.Add(this.cmbPadre1);
             this.panel2.Controls.Add(this.dtpFecha);
             this.panel2.Controls.Add(this.cmbGenero);
             this.panel2.Controls.Add(this.cmbRelacionFamiliar);
             this.panel2.Controls.Add(this.cmbResidencia);
-            this.panel2.Controls.Add(this.btnLimpiar);
-            this.panel2.Controls.Add(this.btnModificar);
-            this.panel2.Controls.Add(this.btnEliminar);
             this.panel2.Controls.Add(this.txtCedula);
             this.panel2.Controls.Add(this.label13);
             this.panel2.Controls.Add(this.label12);
@@ -126,7 +94,7 @@
             this.panel2.Location = new System.Drawing.Point(12, 50);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(531, 299);
-            this.panel2.TabIndex = 6;
+            this.panel2.TabIndex = 8;
             // 
             // txtConyuge
             // 
@@ -152,7 +120,6 @@
             this.btnUnionPareja.TabIndex = 65;
             this.btnUnionPareja.Text = "Seleccionar";
             this.btnUnionPareja.UseVisualStyleBackColor = false;
-            this.btnUnionPareja.Click += new System.EventHandler(this.btnUnionPareja_Click);
             // 
             // pictureFoto
             // 
@@ -177,7 +144,6 @@
             this.btnSeleccionarFoto.TabIndex = 63;
             this.btnSeleccionarFoto.Text = "Seleccionar";
             this.btnSeleccionarFoto.UseVisualStyleBackColor = false;
-            this.btnSeleccionarFoto.Click += new System.EventHandler(this.btnSeleccionarFoto_Click);
             // 
             // chkFallecido
             // 
@@ -191,15 +157,23 @@
             this.chkFallecido.Text = "Fallecido?";
             this.chkFallecido.UseVisualStyleBackColor = true;
             // 
-            // cmbPadres
+            // cmbPadre2
             // 
-            this.cmbPadres.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbPadres.FormattingEnabled = true;
-            this.cmbPadres.Location = new System.Drawing.Point(263, 78);
-            this.cmbPadres.Name = "cmbPadres";
-            this.cmbPadres.Size = new System.Drawing.Size(117, 26);
-            this.cmbPadres.TabIndex = 60;
-            this.cmbPadres.SelectedIndexChanged += new System.EventHandler(this.cmbPadres_SelectedIndexChanged);
+            this.cmbPadre2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbPadre2.FormattingEnabled = true;
+            this.cmbPadre2.Location = new System.Drawing.Point(324, 78);
+            this.cmbPadre2.Name = "cmbPadre2";
+            this.cmbPadre2.Size = new System.Drawing.Size(56, 26);
+            this.cmbPadre2.TabIndex = 61;
+            // 
+            // cmbPadre1
+            // 
+            this.cmbPadre1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbPadre1.FormattingEnabled = true;
+            this.cmbPadre1.Location = new System.Drawing.Point(263, 78);
+            this.cmbPadre1.Name = "cmbPadre1";
+            this.cmbPadre1.Size = new System.Drawing.Size(57, 26);
+            this.cmbPadre1.TabIndex = 60;
             // 
             // dtpFecha
             // 
@@ -227,7 +201,10 @@
             this.cmbRelacionFamiliar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbRelacionFamiliar.FormattingEnabled = true;
             this.cmbRelacionFamiliar.Items.AddRange(new object[] {
+            "Bisabuelos",
+            "Abuelos",
             "Tios",
+            "Tios Politicos",
             "Primos",
             "Padres",
             "Hermanos",
@@ -235,7 +212,7 @@
             "Hijos",
             "Nietos",
             "Bisnietos"});
-            this.cmbRelacionFamiliar.Location = new System.Drawing.Point(386, 78);
+            this.cmbRelacionFamiliar.Location = new System.Drawing.Point(386, 79);
             this.cmbRelacionFamiliar.Name = "cmbRelacionFamiliar";
             this.cmbRelacionFamiliar.Size = new System.Drawing.Size(119, 26);
             this.cmbRelacionFamiliar.TabIndex = 55;
@@ -256,54 +233,6 @@
             this.cmbResidencia.Name = "cmbResidencia";
             this.cmbResidencia.Size = new System.Drawing.Size(119, 26);
             this.cmbResidencia.TabIndex = 54;
-            // 
-            // btnLimpiar
-            // 
-            this.btnLimpiar.BackColor = System.Drawing.Color.MediumSpringGreen;
-            this.btnLimpiar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLimpiar.FlatAppearance.BorderSize = 0;
-            this.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLimpiar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpiar.ForeColor = System.Drawing.Color.White;
-            this.btnLimpiar.Location = new System.Drawing.Point(392, 252);
-            this.btnLimpiar.Name = "btnLimpiar";
-            this.btnLimpiar.Size = new System.Drawing.Size(119, 30);
-            this.btnLimpiar.TabIndex = 53;
-            this.btnLimpiar.Text = "Limpiar";
-            this.btnLimpiar.UseVisualStyleBackColor = false;
-            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
-            // 
-            // btnModificar
-            // 
-            this.btnModificar.BackColor = System.Drawing.Color.MediumSpringGreen;
-            this.btnModificar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnModificar.FlatAppearance.BorderSize = 0;
-            this.btnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnModificar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnModificar.ForeColor = System.Drawing.Color.White;
-            this.btnModificar.Location = new System.Drawing.Point(142, 252);
-            this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(119, 30);
-            this.btnModificar.TabIndex = 49;
-            this.btnModificar.Text = "Modificar";
-            this.btnModificar.UseVisualStyleBackColor = false;
-            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
-            // 
-            // btnEliminar
-            // 
-            this.btnEliminar.BackColor = System.Drawing.Color.MediumSpringGreen;
-            this.btnEliminar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEliminar.FlatAppearance.BorderSize = 0;
-            this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEliminar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminar.ForeColor = System.Drawing.Color.White;
-            this.btnEliminar.Location = new System.Drawing.Point(267, 252);
-            this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(119, 30);
-            this.btnEliminar.TabIndex = 48;
-            this.btnEliminar.Text = "Eliminar";
-            this.btnEliminar.UseVisualStyleBackColor = false;
-            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // txtCedula
             // 
@@ -381,7 +310,6 @@
             this.cmbEstadoCivil.Name = "cmbEstadoCivil";
             this.cmbEstadoCivil.Size = new System.Drawing.Size(119, 26);
             this.cmbEstadoCivil.TabIndex = 25;
-            this.cmbEstadoCivil.SelectedIndexChanged += new System.EventHandler(this.cmbEstadoCivil_SelectedIndexChanged);
             // 
             // label9
             // 
@@ -441,7 +369,6 @@
             this.btnAñadir.TabIndex = 16;
             this.btnAñadir.Text = "Añadir";
             this.btnAñadir.UseVisualStyleBackColor = false;
-            this.btnAñadir.Click += new System.EventHandler(this.btnAñadir_Click);
             // 
             // label5
             // 
@@ -473,6 +400,17 @@
             this.txtNombre.Size = new System.Drawing.Size(119, 26);
             this.txtNombre.TabIndex = 8;
             // 
+            // lblProducto
+            // 
+            this.lblProducto.AutoSize = true;
+            this.lblProducto.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProducto.ForeColor = System.Drawing.Color.White;
+            this.lblProducto.Location = new System.Drawing.Point(12, 8);
+            this.lblProducto.Name = "lblProducto";
+            this.lblProducto.Size = new System.Drawing.Size(209, 28);
+            this.lblProducto.TabIndex = 9;
+            this.lblProducto.Text = "Agregar Abuelos";
+            // 
             // cmbPersonas
             // 
             this.cmbPersonas.BackColor = System.Drawing.Color.MediumSpringGreen;
@@ -482,8 +420,7 @@
             this.cmbPersonas.Location = new System.Drawing.Point(347, 8);
             this.cmbPersonas.Name = "cmbPersonas";
             this.cmbPersonas.Size = new System.Drawing.Size(166, 32);
-            this.cmbPersonas.TabIndex = 60;
-            this.cmbPersonas.SelectedIndexChanged += new System.EventHandler(this.cmbPersonas_SelectedIndexChanged);
+            this.cmbPersonas.TabIndex = 66;
             // 
             // button3
             // 
@@ -496,12 +433,11 @@
             this.button3.Location = new System.Drawing.Point(316, 9);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(25, 28);
-            this.button3.TabIndex = 59;
+            this.button3.TabIndex = 65;
             this.button3.Text = "↻";
             this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // FrmUserAgregarPersona
+            // FrmUserAgregarAbuelo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -509,13 +445,11 @@
             this.ClientSize = new System.Drawing.Size(555, 361);
             this.Controls.Add(this.cmbPersonas);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.lblProducto);
+            this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FrmUserAgregarPersona";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmUserProductoDetalle";
+            this.Name = "FrmUserAgregarAbuelo";
+            this.Text = "FrmUserAgregarAbuelo";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureFoto)).EndInit();
@@ -525,9 +459,25 @@
         }
 
         #endregion
-        private System.Windows.Forms.Button btnCerrar;
-        private System.Windows.Forms.Label lblProducto;
+
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.TextBox txtConyuge;
+        private System.Windows.Forms.Button btnUnionPareja;
+        private System.Windows.Forms.PictureBox pictureFoto;
+        private System.Windows.Forms.Button btnSeleccionarFoto;
+        private System.Windows.Forms.CheckBox chkFallecido;
+        private System.Windows.Forms.ComboBox cmbPadre2;
+        private System.Windows.Forms.ComboBox cmbPadre1;
+        private System.Windows.Forms.DateTimePicker dtpFecha;
+        private System.Windows.Forms.ComboBox cmbGenero;
+        private System.Windows.Forms.ComboBox cmbRelacionFamiliar;
+        private System.Windows.Forms.ComboBox cmbResidencia;
+        private System.Windows.Forms.TextBox txtCedula;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox cmbEstadoCivil;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
@@ -537,25 +487,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtNombre;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox txtCedula;
-        private System.Windows.Forms.Button btnModificar;
-        private System.Windows.Forms.Button btnEliminar;
-        private System.Windows.Forms.Button btnLimpiar;
-        private System.Windows.Forms.DateTimePicker dtpFecha;
-        private System.Windows.Forms.ComboBox cmbGenero;
-        private System.Windows.Forms.ComboBox cmbRelacionFamiliar;
-        private System.Windows.Forms.ComboBox cmbResidencia;
-        private System.Windows.Forms.ComboBox cmbPadres;
-        private System.Windows.Forms.CheckBox chkFallecido;
-        private System.Windows.Forms.Button btnSeleccionarFoto;
-        private System.Windows.Forms.PictureBox pictureFoto;
-        private System.Windows.Forms.Button btnUnionPareja;
-        private System.Windows.Forms.TextBox txtConyuge;
+        private System.Windows.Forms.Label lblProducto;
         private System.Windows.Forms.ComboBox cmbPersonas;
         private System.Windows.Forms.Button button3;
     }

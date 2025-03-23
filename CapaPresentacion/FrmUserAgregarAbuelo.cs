@@ -10,11 +10,17 @@ using System.Windows.Forms;
 
 namespace CapaPresentacion
 {
-    public partial class FrmUserAgregarHijo : Form
+    public partial class FrmUserAgregarAbuelo : Form
     {
-        public FrmUserAgregarHijo()
+        public FrmUserAgregarAbuelo()
         {
             InitializeComponent();
+        }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            this.DialogResult = DialogResult.Cancel;
+            this.Close(); 
         }
     }
 }

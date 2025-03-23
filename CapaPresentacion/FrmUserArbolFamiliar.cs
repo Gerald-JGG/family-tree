@@ -67,5 +67,33 @@ namespace CapaPresentacion
                 MessageBox.Show("Seleccione una familia antes de continuar.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
+
+        private void btnHacerUnion_Click(object sender, EventArgs e)
+        {
+            if (comboBox1.SelectedItem is KeyValuePair<int, string> selectedFamilia)
+            {
+                ObjFamilia familiaSeleccionada = boFamilia.LeerFamiliaPorId(selectedFamilia.Key, rutaArchivo);
+                FrmUserAgregarPareja frmAgregarPersona = new FrmUserAgregarPareja(familiaSeleccionada);
+                frmAgregarPersona.Show();
+            }
+            else
+            {
+                MessageBox.Show("Seleccione una familia antes de continuar.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void btnAñadirHijo_Click(object sender, EventArgs e)
+        {
+            if (comboBox1.SelectedItem is KeyValuePair<int, string> selectedFamilia)
+            {
+                ObjFamilia familiaSeleccionada = boFamilia.LeerFamiliaPorId(selectedFamilia.Key, rutaArchivo);
+                FrmUserAgregarHijoGenerar frmAgregarPersona = new FrmUserAgregarHijo(familiaSeleccionada);
+                frmAgregarPersona.Show();
+            }
+            else
+            {
+                MessageBox.Show("Seleccione una familia antes de continuar.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
     }
 }

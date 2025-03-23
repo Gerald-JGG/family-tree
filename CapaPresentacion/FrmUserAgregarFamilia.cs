@@ -46,7 +46,36 @@ namespace CapaPresentacion
                 MessageBox.Show("Ingrese un nombre para la familia.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-            
+
+            // Asegurar que se ingresen 8 bisabuelos
+            int contadorBisabuelos = 0;
+            while (contadorBisabuelos < 8)
+            {
+                FrmUserAgregarBisabuelo formBisabuelos = new FrmUserAgregarBisabuelo();
+                if (formBisabuelos.ShowDialog() == DialogResult.OK)
+                {
+                    contadorBisabuelos++;
+                }
+                else
+                {
+                    MessageBox.Show("Debe agregar los bisabuelos antes de continuar.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            }
+
+            // Asegurar que se ingresen 4 abuelos
+            int contadorAbuelos = 0;
+            while (contadorAbuelos < 4)
+            {
+                FrmUserAgregarAbuelo formAbuelos = new FrmUserAgregarAbuelo();
+                if (formAbuelos.ShowDialog() == DialogResult.OK)
+                {
+                    contadorAbuelos++;
+                }
+                else
+                {
+                    MessageBox.Show("Debe agregar los abuelos antes de continuar.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            }
             List<ObjFamilia> familias = boFamilia.LeerFamilias(rutaArchivo);
             int nuevoId = 1;
             if (familias.Count > 0)
@@ -61,7 +90,6 @@ namespace CapaPresentacion
             CargarFamilias();
             LimpiarCampos();
         }
-
 
         private void btnModificar_Click_1(object sender, EventArgs e)
         {

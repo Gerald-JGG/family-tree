@@ -17,9 +17,10 @@ namespace CapaPresentacion
         private List<ObjPersona> posiblesConyuges;
         private FrmUserAgregarPersona ventanaPrincipal;
 
-        public FrmUserAgregarPareja(List<ObjPersona> conyuges)
+        public FrmUserAgregarPareja(List<ObjPersona> conyuges, FrmUserAgregarPersona ventanaPrincipal)
         {
             InitializeComponent();
+            this.ventanaPrincipal = ventanaPrincipal;
             posiblesConyuges = conyuges;
             CargarConyuges();
         }
@@ -44,12 +45,22 @@ namespace CapaPresentacion
                 MessageBox.Show("Debe seleccionar una persona.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-            ObjPersona seleccionado = (ObjPersona)cmbConyuge.SelectedItem;
-            if (ventanaPrincipal is FrmUserAgregarPersona frm)
+            string cedulaSeleccionada = cmbConyuge.SelectedValue.ToString();
+            ObjPersona seleccionado = posiblesConyuges.FirstOrDefault(p => p.Cedula == cedulaSeleccionada);
+
+            if (seleccionado != null)
             {
-                frm.SetConyuge(seleccionado);
+                if (ventanaPrincipal is FrmUserAgregarPersona frm)
+                {
+                    frm.SetConyuge(seleccionado);
+                }
+                MessageBox.Show($"Se ha seleccionado con {seleccionado.Nombre} correctamente.", "Unión Seleccionada", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            MessageBox.Show($"Se ha unido con {seleccionado.Nombre} correctamente.", "Unión Confirmada", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            else
+            {
+                MessageBox.Show("No se encontró el conyuge con la cédula seleccionada.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
             this.Close();
         }
 

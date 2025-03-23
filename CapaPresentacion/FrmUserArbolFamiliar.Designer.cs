@@ -35,6 +35,8 @@
             this.treeView1 = new System.Windows.Forms.TreeView();
             this.button5 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.btnHacerUnion = new System.Windows.Forms.Button();
+            this.btnAñadirHijo = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -126,11 +128,45 @@
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // btnHacerUnion
+            // 
+            this.btnHacerUnion.BackColor = System.Drawing.Color.MediumSpringGreen;
+            this.btnHacerUnion.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnHacerUnion.FlatAppearance.BorderSize = 0;
+            this.btnHacerUnion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHacerUnion.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHacerUnion.ForeColor = System.Drawing.Color.White;
+            this.btnHacerUnion.Location = new System.Drawing.Point(1, 507);
+            this.btnHacerUnion.Name = "btnHacerUnion";
+            this.btnHacerUnion.Size = new System.Drawing.Size(131, 30);
+            this.btnHacerUnion.TabIndex = 59;
+            this.btnHacerUnion.Text = "Hacer Union";
+            this.btnHacerUnion.UseVisualStyleBackColor = false;
+            this.btnHacerUnion.Click += new System.EventHandler(this.btnHacerUnion_Click);
+            // 
+            // btnAñadirHijo
+            // 
+            this.btnAñadirHijo.BackColor = System.Drawing.Color.MediumSpringGreen;
+            this.btnAñadirHijo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAñadirHijo.FlatAppearance.BorderSize = 0;
+            this.btnAñadirHijo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAñadirHijo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAñadirHijo.ForeColor = System.Drawing.Color.White;
+            this.btnAñadirHijo.Location = new System.Drawing.Point(138, 507);
+            this.btnAñadirHijo.Name = "btnAñadirHijo";
+            this.btnAñadirHijo.Size = new System.Drawing.Size(128, 30);
+            this.btnAñadirHijo.TabIndex = 60;
+            this.btnAñadirHijo.Text = "Tener Hijo";
+            this.btnAñadirHijo.UseVisualStyleBackColor = false;
+            this.btnAñadirHijo.Click += new System.EventHandler(this.btnAñadirHijo_Click);
+            // 
             // FrmUserArbolFamiliar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
+            this.Controls.Add(this.btnAñadirHijo);
+            this.Controls.Add(this.btnHacerUnion);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.treeView1);
@@ -155,5 +191,7 @@
         private System.Windows.Forms.TreeView treeView1;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnHacerUnion;
+        private System.Windows.Forms.Button btnAñadirHijo;
     }
 }

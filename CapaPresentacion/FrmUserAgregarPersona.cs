@@ -24,6 +24,7 @@ namespace CapaPresentacion
             boPersona = new BOPersona();
             this.familia = familia;
             CargarPersonas(familia.Id);
+            CargarParejas(familia.Id);
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)
@@ -46,35 +47,40 @@ namespace CapaPresentacion
             else
             {
                 string generoSeleccionado = cmbGenero.SelectedItem?.ToString();
-                string carpetaImagenes = Path.Combine(Application.StartupPath, "Imagenes");
-
                 if (generoSeleccionado == "Masculino")
                 {
-                    rutaImagen = Path.Combine(carpetaImagenes, "hombre.png");
+                    rutaImagen = "Imagenes/hombre.png";  // Ruta relativa
                 }
                 else
                 {
-                    rutaImagen = Path.Combine(carpetaImagenes, "mujer.png");
+                    rutaImagen = "Imagenes/mujer.png";  // Ruta relativa
                 }
             }
+            int? padreId = null;
+            int? madreId = null;
 
+            if (cmbPadres.SelectedItem != null)
+            {
+                var selectedItem = (KeyValuePair<string, Tuple<string, string>>)cmbPadres.SelectedItem;
+                padreId = int.Parse(selectedItem.Value.Item1);
+                madreId = int.Parse(selectedItem.Value.Item2);
+            }
             ObjPersona persona = new ObjPersona
             {
-                Cedula = txtCedula.Text,
+                Cedula = txtCedula.Text.Trim(),
                 Familia = familia.Id,
-                Nombre = txtNombre.Text,
+                Nombre = txtNombre.Text.Trim(),
                 Genero = cmbGenero.SelectedItem.ToString(),
                 FechaNacimiento = dtpFecha.Value,
-                LugarResidencia = cmbResidencia.Text,
+                LugarResidencia = cmbResidencia.Text.Trim(),
                 EstadoCivil = cmbEstadoCivil.SelectedItem.ToString(),
-                Conyuge = Convert.ToInt32(txtConyuge),
                 Fallecido = chkFallecido.Checked,
-                RelacionFamiliar = cmbRelacionFamiliar.Text,
+                RelacionFamiliar = cmbRelacionFamiliar.Text.Trim(),
                 Foto = rutaImagen,
-                Padre = Convert.ToInt32(cmbPadre1.SelectedValue),
-                Madre = Convert.ToInt32(cmbPadre2.SelectedValue)
+                Padre = padreId.HasValue ? padreId.Value : 0,
+                Madre = madreId.HasValue ? madreId.Value : 0,
+                Conyuge = 0
             };
-
             boPersona.CrearPersona(persona, rutaArchivo);
 
             if (txtConyuge.Tag != null)
@@ -82,6 +88,8 @@ namespace CapaPresentacion
                 ObjPersona conyuge = (ObjPersona)txtConyuge.Tag;
                 if (conyuge != null)
                 {
+                    persona.Conyuge = int.Parse(conyuge.Cedula);
+                    conyuge.Conyuge = int.Parse(persona.Cedula);
                     if (persona.Fallecido || conyuge.Fallecido)
                     {
                         persona.EstadoCivil = "Viudo";
@@ -92,8 +100,16 @@ namespace CapaPresentacion
                         persona.EstadoCivil = "Casado";
                         conyuge.EstadoCivil = "Casado";
                     }
-
+                    boPersona.ModificarPersona(persona, rutaArchivo);
                     boPersona.ModificarPersona(conyuge, rutaArchivo);
+                }
+            }
+            else
+            {
+                if (cmbEstadoCivil.SelectedItem.ToString() == "Casado")
+                {
+                    MessageBox.Show("Debe seleccionar un cónyuge.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
                 }
             }
 
@@ -101,13 +117,94 @@ namespace CapaPresentacion
             LimpiarCampos();
         }
 
+
         private void btnModificar_Click(object sender, EventArgs e)
         {
             if (!VerificarCampos())
             {
                 return;
             }
+            string cedulaPersona = txtCedula.Text.Trim();
+            ObjPersona persona = boPersona.BuscarPersonaPorCedula(cedulaPersona, rutaArchivo);
+
+            if (persona == null)
+            {
+                MessageBox.Show("No se encontró a la persona con la cédula proporcionada.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            string rutaImagen = null;
+            if (pictureFoto.Image != null)
+            {
+                rutaImagen = GuardarImagen(pictureFoto.ImageLocation);
+            }
+            else
+            {
+                string generoSeleccionado = cmbGenero.SelectedItem?.ToString();
+                if (generoSeleccionado == "Masculino")
+                {
+                    rutaImagen = "Imagenes/hombre.png";  // Ruta relativa
+                }
+                else
+                {
+                    rutaImagen = "Imagenes/mujer.png";  // Ruta relativa
+                }
+            }
+            int? padreId = null;
+            int? madreId = null;
+
+            if (cmbPadres.SelectedItem != null)
+            {
+                var selectedItem = (KeyValuePair<string, Tuple<string, string>>)cmbPadres.SelectedItem;
+                padreId = int.Parse(selectedItem.Value.Item1);
+                madreId = int.Parse(selectedItem.Value.Item2);
+            }
+            persona.Nombre = txtNombre.Text.Trim();
+            persona.Genero = cmbGenero.SelectedItem.ToString();
+            persona.FechaNacimiento = dtpFecha.Value;
+            persona.LugarResidencia = cmbResidencia.Text.Trim();
+            persona.EstadoCivil = cmbEstadoCivil.SelectedItem.ToString();
+            persona.Fallecido = chkFallecido.Checked;
+            persona.RelacionFamiliar = cmbRelacionFamiliar.Text.Trim();
+            persona.Foto = rutaImagen;
+            persona.Padre = padreId.HasValue ? padreId.Value : 0;
+            persona.Madre = madreId.HasValue ? madreId.Value : 0; 
+            boPersona.ModificarPersona(persona, rutaArchivo);
+
+            if (txtConyuge.Tag != null)
+            {
+                ObjPersona conyuge = (ObjPersona)txtConyuge.Tag;
+                if (conyuge != null)
+                {
+                    persona.Conyuge = int.Parse(conyuge.Cedula);
+                    conyuge.Conyuge = int.Parse(persona.Cedula);
+                    if (persona.Fallecido || conyuge.Fallecido)
+                    {
+                        persona.EstadoCivil = "Viudo";
+                        conyuge.EstadoCivil = "Viudo";
+                    }
+                    else
+                    {
+                        persona.EstadoCivil = "Casado";
+                        conyuge.EstadoCivil = "Casado";
+                    }
+                    boPersona.ModificarPersona(persona, rutaArchivo);
+                    boPersona.ModificarPersona(conyuge, rutaArchivo);
+                }
+            }
+            else
+            {
+                if (cmbEstadoCivil.SelectedItem.ToString() == "Casado")
+                {
+                    MessageBox.Show("Debe seleccionar un cónyuge.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+            }
+
+            MessageBox.Show("Persona modificada exitosamente.");
+            LimpiarCampos();
         }
+
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
@@ -125,7 +222,6 @@ namespace CapaPresentacion
             }
         }
 
-
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
             LimpiarCampos();
@@ -133,7 +229,7 @@ namespace CapaPresentacion
 
         private void cmbEstadoCivil_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (cmbEstadoCivil.SelectedItem.ToString() == "Casado")
+            if (cmbEstadoCivil.SelectedItem != null && cmbEstadoCivil.SelectedItem.ToString() == "Casado")
             {
                 btnUnionPareja.Enabled = true;
             }
@@ -151,11 +247,12 @@ namespace CapaPresentacion
             dtpFecha.Value = DateTime.Now;
             cmbResidencia.SelectedIndex = -1;
             cmbEstadoCivil.SelectedIndex = -1;
+            cmbPersonas.SelectedIndex = -1;
             chkFallecido.Checked = false;
             cmbRelacionFamiliar.SelectedIndex = -1;
             pictureFoto.Image = null;
-            cmbPadre1.SelectedIndex = -1;
-            cmbPadre2.SelectedIndex = -1;
+            cmbPadres.SelectedIndex = -1;
+            CargarPersonas(familia.Id);
         }
 
         // Verificar campos requeridos
@@ -196,12 +293,17 @@ namespace CapaPresentacion
         private string GuardarImagen(string rutaOrigen)
         {
             string directorioDestino = Path.Combine(Application.StartupPath, "Imagenes");
+            if (!Directory.Exists(directorioDestino))
+            {
+                Directory.CreateDirectory(directorioDestino);
+            }
+
             string nombreArchivo = Guid.NewGuid().ToString() + Path.GetExtension(rutaOrigen);
             string rutaDestino = Path.Combine(directorioDestino, nombreArchivo);
 
             File.Copy(rutaOrigen, rutaDestino);
 
-            return rutaDestino;
+            return Path.Combine("Imagenes", nombreArchivo);
         }
 
 
@@ -225,13 +327,9 @@ namespace CapaPresentacion
 
             List<ObjPersona> personas = boPersona.LeerPersonas(rutaArchivo);
             List<ObjPersona> posiblesConyuges = personas
-                .Where(p => p.Familia != familia.Id
-                         && p.Genero == generoContrario
-                         && p.RelacionFamiliar == cmbRelacionFamiliar.SelectedItem.ToString()
+                .Where(p => p.Genero == generoContrario
                          && p.Conyuge == 0
-                         && p.FechaNacimiento != null
-                         && (DateTime.Now.Year - p.FechaNacimiento.Year) >= 18 
-                         && (DateTime.Now.Year - p.FechaNacimiento.Year) <= 45)
+                         && p.FechaNacimiento != null)
                 .ToList();
             return posiblesConyuges;
         }
@@ -243,25 +341,15 @@ namespace CapaPresentacion
             {
                 return;
             }
-            DateTime fechaSeleccionada = dtpFecha.Value;
-            int edadSeleccionada = DateTime.Now.Year - fechaSeleccionada.Year;
-
-            // Verificar que la persona esté dentro del rango de edad (18 a 45 años)
-            if (edadSeleccionada < 18 || edadSeleccionada > 45)
-            {
-                MessageBox.Show("La fecha seleccionada no está dentro del rango de edad permitido (18 a 45 años).", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
             List<ObjPersona> conyugesDisponibles = CargarConyuges();
-
             if (conyugesDisponibles.Any())
             {
-                FrmUserAgregarPareja frmPareja = new FrmUserAgregarPareja(conyugesDisponibles);
+                FrmUserAgregarPareja frmPareja = new FrmUserAgregarPareja(conyugesDisponibles, this);
                 frmPareja.Show();
             }
             else
             {
-                MessageBox.Show("No hay cónyuges disponibles que cumplan con los requisitos.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("No hay cónyuges disponibles.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
@@ -272,8 +360,20 @@ namespace CapaPresentacion
             {
                 txtConyuge.Text = conyuge.Nombre;
                 txtConyuge.Tag = conyuge;
+                lblProducto.Text = conyuge.Nombre;
+                lblProducto.Tag = conyuge;
+
+                if (cmbRelacionFamiliar.SelectedItem?.ToString() == "Hermanos")
+                {
+                    conyuge.RelacionFamiliar = "Cuñados";
+                }
+            }
+            else
+            {
+                MessageBox.Show("No se ha seleccionado un cónyuge.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
 
         private void cmbPersonas_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -293,12 +393,42 @@ namespace CapaPresentacion
                     txtConyuge.Text = personaSeleccionada.Conyuge.ToString();
                     chkFallecido.Checked = personaSeleccionada.Fallecido;
                     cmbRelacionFamiliar.SelectedItem = personaSeleccionada.RelacionFamiliar;
-                    pictureFoto.ImageLocation = personaSeleccionada.Foto;
-                    cmbPadre1.SelectedValue = personaSeleccionada.Padre;
-                    cmbPadre2.SelectedValue = personaSeleccionada.Madre;
+
+                    string rutaFoto = personaSeleccionada.Foto;
+                    if (!string.IsNullOrEmpty(rutaFoto) && File.Exists(rutaFoto))
+                    {
+                        pictureFoto.ImageLocation = rutaFoto;
+                        pictureFoto.SizeMode = PictureBoxSizeMode.Zoom;
+                    }
+
+                    cmbPadres.SelectedValue = personaSeleccionada.Padre;
+                    cmbPadres.SelectedValue = personaSeleccionada.Madre;
                 }
             }
         }
+
+        private void CargarParejas(int idFamilia)
+        {
+            cmbPadres.Items.Clear();
+            List<ObjPersona> personasFamiliaConConyuge = boPersona.LeerPersonas(rutaArchivo)
+                .Where(p => p.Conyuge != 0).ToList();
+
+            foreach (var persona in personasFamiliaConConyuge)
+            {
+                ObjPersona conyuge = boPersona.BuscarPersonaPorCedula(persona.Conyuge.ToString(), rutaArchivo);
+                if (conyuge != null && conyuge.Conyuge == int.Parse(persona.Cedula))
+                {
+                    string parejaNombre = $"{persona.Nombre} & {conyuge.Nombre}";
+                    cmbPadres.Items.Add(new KeyValuePair<string, Tuple<string, string>>(
+                        parejaNombre, new Tuple<string, string>(persona.Cedula, conyuge.Cedula)
+                    ));
+                }
+            }
+            cmbPadres.DisplayMember = "Key";
+            cmbPadres.ValueMember = "Value";
+        }
+
+
 
         private void CargarPersonas(int idFamilia)
         {
@@ -309,6 +439,68 @@ namespace CapaPresentacion
             foreach (var persona in personasFamilia)
             {
                 cmbPersonas.Items.Add(new KeyValuePair<string, string>(persona.Cedula, persona.Nombre));
+            }
+            cmbPersonas.DisplayMember = "Value";
+            cmbPersonas.ValueMember = "Key";
+        }
+
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            CargarPersonas(familia.Id);
+            CargarParejas(familia.Id);
+        }
+
+        private void cmbPadres_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbPadres.SelectedItem != null)
+            {
+                // Deshabilitar el cmbRelacion
+                cmbRelacionFamiliar.Enabled = false;
+
+                // Obtener la relación seleccionada
+                var selectedPair = (KeyValuePair<string, Tuple<string, string>>)cmbPadres.SelectedItem;
+                string padreId = selectedPair.Value.Item1;
+                string madreId = selectedPair.Value.Item2;
+                string relacion = cmbRelacionFamiliar.Text;
+
+                switch (relacion)
+                {
+                    case "Abuelos":
+                        cmbRelacionFamiliar.Items.Clear();
+                        cmbRelacionFamiliar.Items.Add("Tios");
+                        cmbRelacionFamiliar.Items.Add("Padres");
+                        break;
+
+                    case "Padres":
+                        cmbRelacionFamiliar.Items.Clear();
+                        cmbRelacionFamiliar.Items.Add("Hermanos");
+                        break;
+
+                    case "Hermanos":
+                        cmbRelacionFamiliar.Items.Clear();
+                        cmbRelacionFamiliar.Items.Add("Sobrinos");
+                        break;
+
+                    case "Ego":
+                        cmbRelacionFamiliar.Items.Clear();
+                        cmbRelacionFamiliar.Items.Add("Hijos");
+                        break;
+
+                    case "Hijos":
+                        cmbRelacionFamiliar.Items.Clear();
+                        cmbRelacionFamiliar.Items.Add("Nietos");
+                        break;
+
+                    case "Nietos":
+                        cmbRelacionFamiliar.Items.Clear();
+                        cmbRelacionFamiliar.Items.Add("Bisnietos");
+                        break;
+
+                    default:
+                        cmbRelacionFamiliar.Items.Clear();
+                        break;
+                }
             }
         }
 

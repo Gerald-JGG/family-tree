@@ -186,3 +186,6 @@ C:\Users\gonza\Downloads\ArbolGenealogico\CapaPresentacion\obj\Debug\CapaPres.61
 C:\Users\gonza\Downloads\ArbolGenealogico\CapaPresentacion\obj\Debug\CapaPresentacion.exe
 C:\Users\gonza\Downloads\ArbolGenealogico\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
 C:\Users\gonza\Downloads\ArbolGenealogico\CapaPresentacion\obj\Debug\CapaPresentacion.FrmUserAgregarPareja.resources
+C:\Users\gonza\Downloads\ArbolGenealogico\CapaPresentacion\obj\Debug\CapaPresentacion.FrmUserAgregarHijo.resources
+C:\Users\gonza\Downloads\ArbolGenealogico\CapaPresentacion\obj\Debug\CapaPresentacion.FrmUserAgregarAbuelo.resources
+C:\Users\gonza\Downloads\ArbolGenealogico\CapaPresentacion\obj\Debug\CapaPresentacion.FrmUserAgregarBisabuelo.resources
